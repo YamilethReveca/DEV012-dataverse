@@ -6,13 +6,47 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   <main>
-    <section id="root">
-    <ul>
+    <header><h1><img src="https://jolstatic.fr/www/captures/1951/1/58341-640.png"></h1></header>
+    <aside>
+      <label>Filtrar</label>
+      <select data-testid="select-filter" name="type">
+        <option value="">Tipo</option>
+        <option value="agua">Agua</option>
+        <option value="dragon">Dragón</option>      
+        <option value="fantasma">Fantasma</option>
+        <option value="fuego">Fuego</option>
+        <option value="hielo">Hielo</option>
+        <option value="tierra">Tierra</option>
+        <option value="veneno">Veneno</option>
+        <option value="volador">Volador</option>
+      </select><br>
+      
 
-   </ul>
-  </section>
-  </main>
+      <label>Por</label>
+      <select data-testid="select-sort">
+        <option value="">Por</option>
+        <option value="name">Nombre</option>
+        <option value="habilities">Habilidades</option>
+        <option value="shortDescription">Corta descripción</option>
+      </select><br>
+
+      <label>Ordenar</label><br>
+      <div>
+        <input type="radio" name="sort-order" value="asc">Asc
+        <input type="radio" name="sort-order" value="desc">Desc
+      </div>
+
+      <button data-testid="button-clear">Limpiar</button>
+
+    </aside>
+
+    <main>
+      <section id="root">
+        <ul>
+
+        </ul>
+      </section>
+    </main>
     <script src="main.js" type="module"></script>
   </body>
 </html>

@@ -155,10 +155,11 @@ export default [
     "id": "Tornadus",
     "name": "Tornadus",
     "shortDescription": "El Pokémon Torbellino",
+    "description":"Tornadus es un Pokémon legendario de tipo Volador de la región de Teselia. Se caracteriza por su apariencia de genio del viento, con una gran melena de nubes y una actitud traviesa. Su capacidad para generar tormentas y vientos furiosos lo convierte en una fuerza impredecible de la naturaleza. Tornadus es conocido por su agilidad y su capacidad para causar estragos en el clima, siendo una criatura icónica de la serie Pokémon.",
     "imgUrl": "https://th.bing.com/th/id/OIG.Z2wzgre5nZZuDefEoyNB?pid=ImgGn",
     "fact": {
       "mainField": "Volador",
-      "habilities": "Forma Avatar- Forma Tótem",
+      "habilities": "Forma Avatar - Forma Tótem",
       "weight": "63.0 Kg",
     }
   },
