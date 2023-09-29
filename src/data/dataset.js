@@ -164,6 +164,147 @@ export default [
     }
   },
 
- 
+{
+    "id": "cubchoo",
+    "name": "Cubchoo",
+    "shortDescription": "Pokémon tipo hielo",
+    "description": "Cubchoo es un pequeño Pokémon tipo hielo conocido por su nariz que gotea. Vive en climas fríos y se alimenta de bayas congeladas. Cuando se enfada, su aliento puede congelar el aire.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.6Z6F4A46Z1_lCsPO9pg_?pid=ImgGn",
+    "fact": {
+      "mainField": "Hielo",
+      "habilities": "Pelea con estilo",
+      "weight": "8.5 kg"
+    }
+  },
+
+  {
+    "id": "glaceon",
+    "name": "Glaceon",
+    "shortDescription": "Pokémon tipo hielo",
+    "description": "Glaceon es una evolución especial de Eevee. Su pelaje brillante y cristalino refleja la luz de la luna en noches estrelladas. Puede congelar instantáneamente el aire a su alrededor.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.cEaZH0jJzd99tCkitZMC?pid=ImgGn",
+    "fact": {
+      "mainField": "Hielo",
+      "habilities": "Cambio hoja",
+      "weight": "25.9 kg"
+    }
+  },
+
+  {
+    "id": "mimikyu",
+    "name": "Mimikyu",
+    "shortDescription": "Pokémon tipo fantasma-hada",
+    "description": "Mimikyu es un Pokémon tímido y solitario que se esconde bajo un disfraz hecho a mano. Anhela la compañía de otros Pokémon y hará cualquier cosa para ganar su afecto.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.Dg5s1LJLly0t_pzkr7tO?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Fantasma",
+      "habilities": "Disfraz",
+      "weight": "0.7 kg"
+    }
+  },
+
+  {
+    "id": "pumpkaboo",
+    "name": "Pumpkaboo",
+    "shortDescription": "Pokémon tipo fantasma-planta",
+    "description": "Pumpkaboo es un misterioso Pokémon con forma de calabaza. Se oculta en la oscuridad y asusta a los viajeros desprevenidos. Su cuerpo brilla en la noche.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.ETud2MvUOA2CPlz.JlZy?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Fantasma",
+      "habilities": "Sombra traviesa",
+      "weight": "5.0 kg"
+    }
+  },
+
+  {
+    "id": "haunter",
+    "name": "Haunter",
+    "shortDescription": "Pokémon tipo fantasma-veneno",
+    "description": "Haunter es un Pokémon malicioso que disfruta asustando a las personas. Se dice que su lengua es venenosa. Puede atravesar las paredes y volverse invisible.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.OKfSfDQVkGIIFmxG8snL?pid=ImgGn",
+    "fact": {
+      "mainField": "Fantasma",
+      "habilities": "Levitación",
+      "weight": "0.1 kg"
+    }
+  },
+
+  {
+    "id": "dratini",
+    "name": "Dratini",
+    "shortDescription": "Pokémon tipo dragón",
+    "description": "Dratini es un Pokémon serpenteante de tipo dragón. Su cuerpo es largo y elegante. Se dice que este Pokémon tiene una mirada hipnótica que atrae a otros.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.4KVMz6JR.tkuVAG39PmZ?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Dragón",
+      "habilities": "Cuerpo puro",
+      "weight": "3.3 kg"
+    }
+  },
+
+  {
+    "id": "eiscue",
+    "name": "Eiscue",
+    "shortDescription": "Pokémon tipo hielo",
+    "description": "Eiscue es un curioso Pokémon con una cabeza de hielo que cambia de expresión según su estado de ánimo. Puede crear ráfagas de frío extremo y vive en climas fríos.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.pArSYR5.XtmOyPIrnEbG?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Hielo",
+      "habilities": "Refrigerador",
+      "weight": "89.0 kg"
+    }
+  },
+
+  {
+    "id": "misdreavus",
+    "name": "Misdreavus",
+    "shortDescription": "Pokémon tipo fantasma",
+    "description": "Misdreavus es un travieso Pokémon tipo fantasma que disfruta asustando a las personas con sus chillidos. Se cree que su gemido puede causar pesadillas.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.5s3OYdi9nI4etVA_oxty?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Fantasma",
+      "habilities": "Levitación",
+      "weight": "1.0 kg"
+    }
+  },
+  
+  {
+    "id": "pikachu",
+    "name": "Pikachu",
+    "shortDescription": "Pokémon tipo eléctrico",
+    "description": "Pikachu es uno de los Pokémon más icónicos y queridos. Su cola actúa como una antena y puede generar descargas eléctricas. Siempre lleva consigo una sonrisa en su rostro.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.erjRulMVvWtgshNN9_Hv?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Eléctrico",
+      "habilities": "Electricidad estática",
+      "weight": "6.0 kg"
+    }
+  },
+
+  {
+    "id": "jolteon",
+    "name": "Jolteon",
+    "shortDescription": "Pokémon tipo eléctrico",
+    "description": "Jolteon es un Pokémon eléctrico conocido por su velocidad y sus puntiagudas púas cargadas de electricidad. Es capaz de generar rayos en cualquier momento.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.I8Rdt9xAtUFEUQErrIVa?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Eléctrico",
+      "habilities": "Absorber voltaje",
+      "weight": "24.5 kg"
+    }
+  },
+
+  {
+    "id": "togedemaru",
+    "name": "Togedemaru",
+    "shortDescription": "Pokémon tipo eléctrico-acero",
+    "description": "Togedemaru es un pequeño Pokémon con un cuerpo cubierto de espinas que usa para defenderse. Su pelaje de acero lo protege de ataques eléctricos.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.LQ4JQL7OdD5zAow2hRt0?pid=ImgGn",
+    "fact": {
+      "mainField": "Eléctrico-Acero",
+      "habilities": "Espina trampa",
+      "weight": "3.3 kg"
+    }
+  },
 ];
  
