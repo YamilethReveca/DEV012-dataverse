@@ -1,14 +1,14 @@
 export const renderItems = (data) => {
+  console.log(data);
 
   const ul = document.createElement("ul");
 
   for (let i = 0; i < data.length; i++) {
-    let objeto = data[i];
+    let pokemon = data[i];
 
     let li = document.createElement("li");
 
     li.innerHTML = `
-   <img src="${objeto.imgUrl}" alt="Imagen de ${objeto.name}">
       <dl>
         <img src="${pokemon.imgUrl}" alt="${pokemon.id}">
         <dt>Nombre:</dt>
