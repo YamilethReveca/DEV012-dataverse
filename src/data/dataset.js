@@ -114,7 +114,7 @@ export default [
     "id": "Hippowdon",
     "name": "Hippowdon",
     "shortDescription": "El Pokémon hipopótamo",
-    "descripcion": "Hippowdon es un Pokémon de tipo Tierra que se asemeja a un imponente hipopótamo. Su piel es áspera y resistente, actuando como una armadura natural. Hippowdon tiene la capacidad de crear y controlar tormentas de arena a su alrededor, lo que le permite proteger su territorio y causar daño a sus enemigos. Es conocido por su naturaleza territorial y su disposición a defender su hábitat ferozmente. A pesar de su aspecto intimidante, Hippowdon es un protector valiente y un poderoso Pokémon que se gana el respeto en el mundo Pokémon por su habilidad en la batalla.",
+    "description": "Hippowdon es un Pokémon de tipo Tierra que se asemeja a un imponente hipopótamo. Su piel es áspera y resistente, actuando como una armadura natural. Hippowdon tiene la capacidad de crear y controlar tormentas de arena a su alrededor, lo que le permite proteger su territorio y causar daño a sus enemigos. Es conocido por su naturaleza territorial y su disposición a defender su hábitat ferozmente. A pesar de su aspecto intimidante, Hippowdon es un protector valiente y un poderoso Pokémon que se gana el respeto en el mundo Pokémon por su habilidad en la batalla.",
     "imgUrl": "https://th.bing.com/th/id/OIG.9VMRS5z3IQRKkBN67cd9?pid=ImgGn",
     "fact": {
       "mainField": "Tierra",
@@ -128,7 +128,7 @@ export default [
     "id": "Pidgeot",
     "name": "Pidgeot",
     "shortDescription": "El Pokémon Pájaro Grande",
-    "descripcion": "Pidgeot es un majestuoso Pokémon de tipo Volador. Su imponente plumaje dorado y su envergadura impresionante lo hacen destacar en los cielos. Con un pico afilado y garras fuertes, es un depredador letal en el aire. Pidgeot puede volar a velocidades increíbles y tiene una aguda vista para detectar presas desde grandes alturas. A pesar de su naturaleza feroz en la batalla, es leal a su entrenador y puede usar su habilidad para llevar mensajes a larga distancia. Pidgeot personifica la elegancia y la ferocidad en el mundo de los Pokémon voladores.",
+    "description": "Pidgeot es un majestuoso Pokémon de tipo Volador. Su imponente plumaje dorado y su envergadura impresionante lo hacen destacar en los cielos. Con un pico afilado y garras fuertes, es un depredador letal en el aire. Pidgeot puede volar a velocidades increíbles y tiene una aguda vista para detectar presas desde grandes alturas. A pesar de su naturaleza feroz en la batalla, es leal a su entrenador y puede usar su habilidad para llevar mensajes a larga distancia. Pidgeot personifica la elegancia y la ferocidad en el mundo de los Pokémon voladores.",
     "imgUrl": "https://th.bing.com/th/id/OIG.NukJJKkG8lZUkIa8F.Xk?pid=ImgGn",
     "fact": {
       "mainField": "Volador",
@@ -142,7 +142,7 @@ export default [
     "id": "Fearow",
     "name": "Fearow",
     "shortDescription": "El Pokémon Pico Largo",
-    "descripcion": "Fearow es un Pokémon de tipo Volador con un pico largo y afilado que utiliza para cazar presas en picada desde los cielos. Su cuerpo es delgado y aerodinámico, lo que le permite alcanzar altas velocidades en vuelo. Fearow tiene una vista aguda y es territorial, defendiendo su área de anidación con ferocidad. Aunque puede parecer intimidante, es un Pokémon inteligente y leal a su entrenador. Su capacidad para volar a grandes alturas y atacar con precisión lo convierte en un cazador formidable en el mundo Pokémon.",
+    "description": "Fearow es un Pokémon de tipo Volador con un pico largo y afilado que utiliza para cazar presas en picada desde los cielos. Su cuerpo es delgado y aerodinámico, lo que le permite alcanzar altas velocidades en vuelo. Fearow tiene una vista aguda y es territorial, defendiendo su área de anidación con ferocidad. Aunque puede parecer intimidante, es un Pokémon inteligente y leal a su entrenador. Su capacidad para volar a grandes alturas y atacar con precisión lo convierte en un cazador formidable en el mundo Pokémon.",
     "imgUrl": "https://th.bing.com/th/id/OIG.0L0CavNMK2T4aRMb4Khe?pid=ImgGn",
     "fact": {
       "mainField": "Volador",
@@ -191,6 +191,19 @@ export default [
   },
 
   {
+    "id": "eiscue",
+    "name": "Eiscue",
+    "shortDescription": "Pokémon tipo hielo",
+    "description": "Eiscue es un curioso Pokémon con una cabeza de hielo que cambia de expresión según su estado de ánimo. Puede crear ráfagas de frío extremo y vive en climas fríos.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.pArSYR5.XtmOyPIrnEbG?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Hielo",
+      "habilities": "Refrigerador",
+      "weight": "89.0 kg"
+    }
+  },
+
+  {
     "id": "mimikyu",
     "name": "Mimikyu",
     "shortDescription": "Pokémon tipo fantasma-hada",
@@ -217,17 +230,31 @@ export default [
   },
 
   {
-    "id": "haunter",
-    "name": "Haunter",
-    "shortDescription": "Pokémon tipo fantasma-veneno",
-    "description": "Haunter es un Pokémon malicioso que disfruta asustando a las personas. Se dice que su lengua es venenosa. Puede atravesar las paredes y volverse invisible.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.OKfSfDQVkGIIFmxG8snL?pid=ImgGn",
+    "id": "misdreavus",
+    "name": "Misdreavus",
+    "shortDescription": "Pokémon tipo fantasma",
+    "description": "Misdreavus es un travieso Pokémon tipo fantasma que disfruta asustando a las personas con sus chillidos. Se cree que su gemido puede causar pesadillas.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.5s3OYdi9nI4etVA_oxty?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Levitación",
-      "weight": "0.1 kg"
+      "weight": "1.0 kg"
     }
   },
+
+  {
+    "id": "altaria",
+    "name": "Altaria",
+    "shortDescription": "Pokémon tipo dragón/volador",
+    "description": "Altaria es un Pokémon tipo dragón/volador conocido por su belleza y suavidad. Su cuerpo está cubierto de plumas blancas y esponjosas que le permiten volar por los cielos con gracia. A pesar de su aspecto apacible, Altaria puede ser un adversario formidable en batalla.",
+    "imgUrl": "https://th.bing.com/th/id/OIG..yMEkp9VbMX2iBpfgRp0?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Dragón/Volador",
+      "habilities": "Velo sagrado",
+      "weight": "20.6 kg"
+    }
+  },
+  
 
   {
     "id": "dratini",
@@ -242,31 +269,20 @@ export default [
     }
   },
 
+  
   {
-    "id": "eiscue",
-    "name": "Eiscue",
-    "shortDescription": "Pokémon tipo hielo",
-    "description": "Eiscue es un curioso Pokémon con una cabeza de hielo que cambia de expresión según su estado de ánimo. Puede crear ráfagas de frío extremo y vive en climas fríos.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.pArSYR5.XtmOyPIrnEbG?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "id": "goodra",
+    "name": "Goodra",
+    "shortDescription": "Pokémon tipo dragón",
+    "description": "Goodra es un Pokémon tipo dragón/babas conocido por su apariencia amigable y su capacidad para controlar babas pegajosas. A pesar de su aspecto, es un poderoso Pokémon que puede lanzar poderosos ataques de tipo dragón.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.UEyTfa1Ez_A0H21KJrAk?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
     "fact": {
-      "mainField": "Hielo",
-      "habilities": "Refrigerador",
-      "weight": "89.0 kg"
+      "mainField": "Dragón/Babas",
+      "habilities": "Hidratación",
+      "weight": "150 kg"
     }
   },
 
-  {
-    "id": "misdreavus",
-    "name": "Misdreavus",
-    "shortDescription": "Pokémon tipo fantasma",
-    "description": "Misdreavus es un travieso Pokémon tipo fantasma que disfruta asustando a las personas con sus chillidos. Se cree que su gemido puede causar pesadillas.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.5s3OYdi9nI4etVA_oxty?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
-    "fact": {
-      "mainField": "Fantasma",
-      "habilities": "Levitación",
-      "weight": "1.0 kg"
-    }
-  },
   
   {
     "id": "pikachu",

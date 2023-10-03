@@ -2,9 +2,12 @@ header, h2{
     text-align: center;
 }
 
-img{
+img {
     width: 100px;
     height: 100px;
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -12,9 +15,10 @@ li{
     border-radius: 10px 5px 10px;
     border: 1px solid black;
     list-style: none;
-    margin-top: 5x;
+    margin-top: 5px;
     width: 26%;
-    float: left;
+    height: 13%;
+    float: right;
 }
 
 
