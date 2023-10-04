@@ -11,13 +11,13 @@ export const renderItems = (data) => {
     li.innerHTML = `
       <dl>
         <img src="${pokemon.imgUrl}" alt="${pokemon.id}">
-        <br></br>
+        <br>
         <dt>Nombre:</dt>
         <dd itemprop="name"><strong>${pokemon.name}</strong></dd>
-        <br></br>
+        <br>
         <dt>Corta descripción:</dt>
         <dd itemprop="shortDescription">${pokemon.shortDescription}</dd>
-        <br></br>
+        <br>
         <dt>Descripción:</dt>
         <dd itemprop="description">${pokemon.description}</dd>
       </dl>`;
