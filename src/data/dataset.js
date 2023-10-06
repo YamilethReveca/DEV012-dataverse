@@ -249,7 +249,7 @@ export default [
     "description": "Altaria es un Pokémon tipo dragón/volador conocido por su belleza y suavidad. Su cuerpo está cubierto de plumas blancas y esponjosas que le permiten volar por los cielos con gracia. A pesar de su aspecto apacible, Altaria puede ser un adversario formidable en batalla.",
     "imgUrl": "https://th.bing.com/th/id/OIG..yMEkp9VbMX2iBpfgRp0?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
     "fact": {
-      "mainField": "Dragón/Volador",
+      "mainField": "Dragón",
       "habilities": "Velo sagrado",
       "weight": "20.6 kg"
     }
@@ -273,11 +273,11 @@ export default [
   {
     "id": "goodra",
     "name": "Goodra",
-    "shortDescription": "Pokémon tipo dragón",
+    "shortDescription": "Dragón",
     "description": "Goodra es un Pokémon tipo dragón/babas conocido por su apariencia amigable y su capacidad para controlar babas pegajosas. A pesar de su aspecto, es un poderoso Pokémon que puede lanzar poderosos ataques de tipo dragón.",
     "imgUrl": "https://th.bing.com/th/id/OIG.UEyTfa1Ez_A0H21KJrAk?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
     "fact": {
-      "mainField": "Dragón/Babas",
+      "mainField": "Dragón",
       "habilities": "Hidratación",
       "weight": "150 kg"
     }
@@ -287,7 +287,7 @@ export default [
   {
     "id": "pikachu",
     "name": "Pikachu",
-    "shortDescription": "Pokémon tipo eléctrico",
+    "shortDescription": "Eléctrico",
     "description": "Pikachu es uno de los Pokémon más icónicos y queridos. Su cola actúa como una antena y puede generar descargas eléctricas. Siempre lleva consigo una sonrisa en su rostro.",
     "imgUrl": "https://th.bing.com/th/id/OIG.erjRulMVvWtgshNN9_Hv?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
     "fact": {
@@ -300,7 +300,7 @@ export default [
   {
     "id": "jolteon",
     "name": "Jolteon",
-    "shortDescription": "Pokémon tipo eléctrico",
+    "shortDescription": "Eléctrico",
     "description": "Jolteon es un Pokémon eléctrico conocido por su velocidad y sus puntiagudas púas cargadas de electricidad. Es capaz de generar rayos en cualquier momento.",
     "imgUrl": "https://th.bing.com/th/id/OIG.I8Rdt9xAtUFEUQErrIVa?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
     "fact": {
@@ -317,7 +317,7 @@ export default [
     "description": "Togedemaru es un pequeño Pokémon con un cuerpo cubierto de espinas que usa para defenderse. Su pelaje de acero lo protege de ataques eléctricos.",
     "imgUrl": "https://th.bing.com/th/id/OIG.LQ4JQL7OdD5zAow2hRt0?pid=ImgGn",
     "fact": {
-      "mainField": "Eléctrico-Acero",
+      "mainField": "Eléctrico",
       "habilities": "Espina trampa",
       "weight": "3.3 kg"
     }
