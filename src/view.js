@@ -1,5 +1,5 @@
 export const renderItems = (data) => {
-  console.log(data)
+  //console.log(data)
   // Aquí comienza tu código y puedes retornar lo que tu necesites
 
 
@@ -18,17 +18,17 @@ let li= document.createElement("li");  // creamos en li
 li.innerHTML= "";  // inicializamos el li vacio.
 
 li.innerHTML=li.innerHTML + `<dl><img src="${pokemon.imgUrl}" alt="${pokemon.id}">
-<dt>Nombre:</dt><dd itemprop="name"><strong>${pokemon.name}</strong></dd>
-<dt>Corta descripción:</dt><dd itemprop="shortDescription">${pokemon.shortDescription}</dd>
-<dt>Descripción:</dt><dd itemprop="description">${pokemon.description}</dd></dl>`
+<dt><strong>Nombre:</dt><dd itemprop="name">${pokemon.name}</strong></dd>
+<dt><strong>Corta descripción:</strong></dt><dd itemprop="shortDescription">${pokemon.shortDescription}</dd>
+<dt><strong>Descripción:</strong></dt><dd itemprop="description">${pokemon.description}</dd></dl>`
 
 
 // Accede a los valores dentro del objeto 'fact'
 let fact = pokemon.fact;
 if (fact) {
-  li.innerHTML += `<dl><dt>Campo principal:</dt><dd itemprop="mainField">${fact.mainField}</dd>
-  <dt>Habilidades:</dt><dd itemprop="habilities">${fact.habilities}</dd>
-  <dt>Peso:</dt><dd itemprop="weight">${fact.weight}</dd></dl>`;
+  li.innerHTML += `<dl><dt><strong>Campo principal:</strong></dt><dd itemprop="mainField">${fact.mainField}</dd>
+  <dt><strong>Habilidades:</strong></dt><dd itemprop="habilities">${fact.habilities}</dd>
+  <dt><strong>Peso:</strong></dt><dd itemprop="weight">${fact.weight}</dd></dl>`;
 }
 
 ul.appendChild(li)                       

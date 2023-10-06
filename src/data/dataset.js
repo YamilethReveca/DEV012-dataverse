@@ -128,7 +128,7 @@ export default [
     "id": "pidgeot",
     "name": "Pidgeot",
     "shortDescription": "El Pokémon Pájaro Grande",
-    "descripcion": "Pidgeot es un majestuoso Pokémon de tipo Volador. Su imponente plumaje dorado y su envergadura impresionante lo hacen destacar en los cielos. Con un pico afilado y garras fuertes, es un depredador letal en el aire. Pidgeot puede volar a velocidades increíbles y tiene una aguda vista para detectar presas desde grandes alturas. A pesar de su naturaleza feroz en la batalla, es leal a su entrenador y puede usar su habilidad para llevar mensajes a larga distancia. Pidgeot personifica la elegancia y la ferocidad en el mundo de los Pokémon voladores.",
+    "description": "Pidgeot es un majestuoso Pokémon de tipo Volador. Su imponente plumaje dorado y su envergadura impresionante lo hacen destacar en los cielos. Con un pico afilado y garras fuertes, es un depredador letal en el aire. Pidgeot puede volar a velocidades increíbles y tiene una aguda vista para detectar presas desde grandes alturas. A pesar de su naturaleza feroz en la batalla, es leal a su entrenador y puede usar su habilidad para llevar mensajes a larga distancia. Pidgeot personifica la elegancia y la ferocidad en el mundo de los Pokémon voladores.",
     "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png",
     "fact": {
       "mainField": "Volador",
@@ -164,7 +164,7 @@ export default [
     }
   },
 
-{
+  {
     "id": "cubchoo",
     "name": "Cubchoo",
     "shortDescription": "Pokémon tipo hielo",
@@ -173,7 +173,7 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Pelea con estilo",
-      "weight": "8.5 kg",
+      "weight": "8.5 kg"
     }
   },
 
@@ -186,59 +186,7 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Cambio hoja",
-      "weight": "25.9 kg",
-    }
-  },
-
-  {
-    "id": "mimikyu",
-    "name": "Mimikyu",
-    "shortDescription": "Pokémon tipo fantasma-hada",
-    "description": "Mimikyu es un Pokémon tímido y solitario que se esconde bajo un disfraz hecho a mano. Anhela la compañía de otros Pokémon y hará cualquier cosa para ganar su afecto.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.Dg5s1LJLly0t_pzkr7tO?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
-    "fact": {
-      "mainField": "Fantasma",
-      "habilities": "Disfraz",
-      "weight": "0.7 kg",
-    }
-  },
-
-  {
-    "id": "pumpkaboo",
-    "name": "Pumpkaboo",
-    "shortDescription": "Pokémon tipo fantasma-planta",
-    "description": "Pumpkaboo es un misterioso Pokémon con forma de calabaza. Se oculta en la oscuridad y asusta a los viajeros desprevenidos. Su cuerpo brilla en la noche.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.ETud2MvUOA2CPlz.JlZy?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
-    "fact": {
-      "mainField": "Fantasma",
-      "habilities": "Sombra traviesa",
-      "weight": "5.0 kg",
-    }
-  },
-
-  {
-    "id": "haunter",
-    "name": "Haunter",
-    "shortDescription": "Pokémon tipo fantasma-veneno",
-    "description": "Haunter es un Pokémon malicioso que disfruta asustando a las personas. Se dice que su lengua es venenosa. Puede atravesar las paredes y volverse invisible.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.OKfSfDQVkGIIFmxG8snL?pid=ImgGn",
-    "fact": {
-      "mainField": "Fantasma",
-      "habilities": "Levitación",
-      "weight": "0.1 kg",
-    }
-  },
-
-  {
-    "id": "dratini",
-    "name": "Dratini",
-    "shortDescription": "Pokémon tipo dragón",
-    "description": "Dratini es un Pokémon serpenteante de tipo dragón. Su cuerpo es largo y elegante. Se dice que este Pokémon tiene una mirada hipnótica que atrae a otros.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.4KVMz6JR.tkuVAG39PmZ?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
-    "fact": {
-      "mainField": "Dragon",
-      "habilities": "Cuerpo puro",
-      "weight": "3.3 kg",
+      "weight": "25.9 kg"
     }
   },
 
@@ -251,7 +199,33 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Refrigerador",
-      "weight": "89.0 kg",
+      "weight": "89.0 kg"
+    }
+  },
+
+  {
+    "id": "mimikyu",
+    "name": "Mimikyu",
+    "shortDescription": "Pokémon tipo fantasma-hada",
+    "description": "Mimikyu es un Pokémon tímido y solitario que se esconde bajo un disfraz hecho a mano. Anhela la compañía de otros Pokémon y hará cualquier cosa para ganar su afecto.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.Dg5s1LJLly0t_pzkr7tO?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Fantasma",
+      "habilities": "Disfraz",
+      "weight": "0.7 kg"
+    }
+  },
+
+  {
+    "id": "pumpkaboo",
+    "name": "Pumpkaboo",
+    "shortDescription": "Pokémon tipo fantasma-planta",
+    "description": "Pumpkaboo es un misterioso Pokémon con forma de calabaza. Se oculta en la oscuridad y asusta a los viajeros desprevenidos. Su cuerpo brilla en la noche.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.ETud2MvUOA2CPlz.JlZy?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Fantasma",
+      "habilities": "Sombra traviesa",
+      "weight": "5.0 kg"
     }
   },
 
@@ -264,20 +238,62 @@ export default [
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Levitación",
-      "weight": "1.0 kg",
+      "weight": "1.0 kg"
     }
   },
+
+  {
+    "id": "altaria",
+    "name": "Altaria",
+    "shortDescription": "Pokémon tipo dragón/volador",
+    "description": "Altaria es un Pokémon tipo dragón/volador conocido por su belleza y suavidad. Su cuerpo está cubierto de plumas blancas y esponjosas que le permiten volar por los cielos con gracia. A pesar de su aspecto apacible, Altaria puede ser un adversario formidable en batalla.",
+    "imgUrl": "https://th.bing.com/th/id/OIG..yMEkp9VbMX2iBpfgRp0?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Dragón",
+      "habilities": "Velo sagrado",
+      "weight": "20.6 kg"
+    }
+  },
+  
+
+  {
+    "id": "dratini",
+    "name": "Dratini",
+    "shortDescription": "Pokémon tipo dragón",
+    "description": "Dratini es un Pokémon serpenteante de tipo dragón. Su cuerpo es largo y elegante. Se dice que este Pokémon tiene una mirada hipnótica que atrae a otros.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.4KVMz6JR.tkuVAG39PmZ?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Dragón",
+      "habilities": "Cuerpo puro",
+      "weight": "3.3 kg"
+    }
+  },
+
+  
+  {
+    "id": "goodra",
+    "name": "Goodra",
+    "shortDescription": "Dragón",
+    "description": "Goodra es un Pokémon tipo dragón/babas conocido por su apariencia amigable y su capacidad para controlar babas pegajosas. A pesar de su aspecto, es un poderoso Pokémon que puede lanzar poderosos ataques de tipo dragón.",
+    "imgUrl": "https://th.bing.com/th/id/OIG.UEyTfa1Ez_A0H21KJrAk?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "fact": {
+      "mainField": "Dragón",
+      "habilities": "Hidratación",
+      "weight": "150 kg"
+    }
+  },
+
   
   {
     "id": "pikachu",
     "name": "Pikachu",
-    "shortDescription": "Pokémon tipo eléctrico",
+    "shortDescription": "Eléctrico",
     "description": "Pikachu es uno de los Pokémon más icónicos y queridos. Su cola actúa como una antena y puede generar descargas eléctricas. Siempre lleva consigo una sonrisa en su rostro.",
     "imgUrl": "https://th.bing.com/th/id/OIG.erjRulMVvWtgshNN9_Hv?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
     "fact": {
-      "mainField": "Electrico",
+      "mainField": "Eléctrico",
       "habilities": "Electricidad estática",
-      "weight": "6.0 kg",
+      "weight": "6.0 kg"
     }
   },
 
@@ -288,9 +304,9 @@ export default [
     "description": "Jolteon es un Pokémon eléctrico conocido por su velocidad y sus puntiagudas púas cargadas de electricidad. Es capaz de generar rayos en cualquier momento.",
     "imgUrl": "https://th.bing.com/th/id/OIG.I8Rdt9xAtUFEUQErrIVa?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
     "fact": {
-      "mainField": "Electrico",
+      "mainField": "Eléctrico",
       "habilities": "Absorber voltaje",
-      "weight": "24.5 kg",
+      "weight": "24.5 kg"
     }
   },
 
@@ -301,10 +317,9 @@ export default [
     "description": "Togedemaru es un pequeño Pokémon con un cuerpo cubierto de espinas que usa para defenderse. Su pelaje de acero lo protege de ataques eléctricos.",
     "imgUrl": "https://th.bing.com/th/id/OIG.LQ4JQL7OdD5zAow2hRt0?pid=ImgGn",
     "fact": {
-      "mainField": "Electrico-Acero",
+      "mainField": "Eléctrico",
       "habilities": "Espina trampa",
-      "weight": "3.3 kg",
+      "weight": "3.3 kg"
     }
   },
 ];
- 
