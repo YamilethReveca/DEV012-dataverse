@@ -11,9 +11,9 @@
       <main>
       <h2>Bienvenido al mundo Pokémon, puedes filtrar y ordenar los pokemones como desees</h2>
       <aside>
-        <label>Filtrar</label>
+        <label>Filtrar por tipo </label>
         <select data-testid="select-filter" name="type">
-          <option value="">Tipo</option>
+          <option value="">Elegir tipo</option>
           <option value="Agua">Agua</option>
           <option value="Dragón">Dragón</option>      
           <option value="Fantasma">Fantasma</option>
@@ -21,25 +21,21 @@
           <option value="Hielo">Hielo</option>
           <option value="Tierra">Tierra</option>
           <option value="Eléctrico">Eléctrico</option>
-          <option value="Eléctrico-Acero">Eléctrico-Acero</option>
           <option value="Volador">Volador</option>
         </select><br>
         
   
-        <label>Por</label>
+        <label>Ordenar</label>
         <select data-testid="select-sort">
-          <option value="">Por</option>
-          <option value="name">Nombre</option>
-          <option value="habilities">Habilidades</option>
-          <option value="shortDescription">Corta descripción</option>
+          <option value="">Ordenar por</option>
+          <option value="name-asc">Nombre A-Z</option>
+          <option value="name-desc">Nombre Z-A</option>
+          <option value="habilities-asc">Habilidades A-Z</option>
+          <option value="habilities-desc">Habilidades Z-A </option>
+          <option value="weight-asc">Peso ascendente</option>
+          <option value="weight-desc">Peso descendente</option>
         </select><br>
-  
-        
-        <div>
-          <input type="radio" name="sort-order" value="asc"><label>Asc</label>
-          <input type="radio" name="sort-order" value="desc"><label>Desc</label>
-        </div>
-  
+                 
         <button data-testid="button-clear">Limpiar</button>
   
       </aside>
