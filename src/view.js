@@ -43,10 +43,3 @@ export const renderItems = (data) => {
   return ul;
 };
 
-
-//renderItems(data)
-//aqui debemos usar el createElement
-//innerHTML
-//appenchild
-//itemscope e itemprop
-
