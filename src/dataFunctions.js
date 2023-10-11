@@ -18,45 +18,53 @@ export const filterData=(data, filterBy, value)=>{
 }
 
 export const sortData = (data, sortBy, sortOrder) => {
-  if (!data || !Array.isArray(data)) {
-    return [];
-  }
 
-  switch (sortBy) {
-    case "name":
-      // Ordena por nombre
-      data.sort((a, b) => (a.name > b.name ? 1 : -1));
-      break;
+ 
+    let sortedData = [...data]; // Clona el arreglo de datos para no modificar el original
 
-    case "habilities":
-      // Ordena por habilidades (puedes personalizar la lógica según tus datos)
-      data.sort((a, b) => (a.fact.habilities > b.fact.habilities ? 1 : -1));
-      break;
+    switch (sortBy) {
+      case "name":
+        sortedData.sort((a, b) => {
+          if (sortOrder === "asc") {
+            return a.name.localeCompare(b.name);
+          } else if (sortOrder === "desc") {
+            return b.name.localeCompare(a.name);
+          }
+        });
+        break;
+      case "habilities":
+        sortedData.sort((a, b) => {
+          if (sortOrder === "asc") {
+            return a.fact.habilities.localeCompare(b.fact.habilities);
+          } else if (sortOrder === "desc") {
+            return b.fact.habilities.localeCompare(a.fact.habilities);
+          }
+        });
+        break;
+      case "weight":
+        sortedData.sort((a, b) => {
+          if (sortOrder === "asc") {
+            return parseFloat(a.fact.weight) - parseFloat(b.fact.weight);
+          } else if (sortOrder === "desc") {
+            return parseFloat(b.fact.weight) - parseFloat(a.fact.weight);
+          }
+        });
+        break;
+      default:
+        // Si no se proporciona un campo válido, devuelve los datos sin cambios
+        return data;
+    }
+  
+    return sortedData;
+  
 
-    case "shortDescription":
-      // Ordena por corta descripción
-      data.sort((a, b) => (a.shortDescription > b.shortDescription ? 1 : -1));
-      break;
-
-    default:
-      // En caso de valor incorrecto, devuelve los datos sin cambios
-      return data;
-  }
-
-  // Si el orden es descendente, invierte el arreglo
-  if (sortOrder === "desc") {
-    data.reverse();
-  }
-
-  return data;
-};
-
+}
 
 
 
 
 export const anotherExample = () => {
-  return [];
+ return [];
 };
 
 

@@ -9,13 +9,13 @@
   <body>
     <header><h1><img id="logo" src="https://jolstatic.fr/www/captures/1951/1/58341-640.png"></h1></header>
       <main>
-      <h2>Bienvenido al mundo Pokémon, puedes filtrar y ordenar los pokemones como desees</h2>
+        <h2>Bienvenido al mundo Pokémon, puedes filtrar y ordenar los pokemones como desees</h2>
       <aside>
-        <label>Filtrar por tipo:</label>
+        <label>Filtrar por tipo </label>
         <select data-testid="select-filter" name="type">
-          <option value="">Selecciona el tipo</option>
+          <option value="">Elegir tipo</option>
           <option value="Agua">Agua</option>
-          <option value="Dragon">Dragón</option>      
+          <option value="Dragón">Dragón</option>      
           <option value="Fantasma">Fantasma</option>
           <option value="Fuego">Fuego</option>
           <option value="Hielo">Hielo</option>
@@ -25,23 +25,25 @@
         </select><br>
         
   
-        <label>Ordenar por:</label>
+        <label>Ordenar</label>
         <select data-testid="select-sort">
           <option value="">Ordenar por</option>
-          <option value="name">Nombre A-Z</option>
-          <option value="name">Nombre Z-A</option>
-          <option value="habilities">Habilidades A-Z</option>
-          <option value="habilities">Habilidades Z-A</option>
-          <option value="shortDescription">Peso Ascendente</option>
-          <option value="shortDescription">Peso Descendente</option>
+          <option value="name-asc">Nombre A-Z</option>
+          <option value="name-desc">Nombre Z-A</option>
+          <option value="habilities-asc">Habilidades A-Z</option>
+          <option value="habilities-desc">Habilidades Z-A </option>
+          <option value="weight-asc">Peso ascendente</option>
+          <option value="weight-desc">Peso descendente</option>
         </select><br>
-  
+                 
         <button data-testid="button-clear">Limpiar</button>
-  
+        <section id="mostarEstadistica">
+         
+        </section>
       </aside>
   
       <section id="root">
-      
+       
       </section>
     </main>
     <footer>
