@@ -5,12 +5,28 @@
     <title>Data Lovers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Oculta los controles del reproductor de audio */
+      audio {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <header><h1><img id="logo" src="https://jolstatic.fr/www/captures/1951/1/58341-640.png"></h1></header>
-      <main>
-        <h2>Bienvenido al mundo Pokémon, puedes filtrar y ordenar los pokemones como desees</h2>
-      <aside>
+    <header><h1><img id="logo" src="logo pokemon..png"></h1></header>
+    <main>
+      <h2><img id="bienvenido" src="pokemon salto.gif" alt="Imagen de bienvenida"></h2>
+      <audio controls autoplay >
+        <source src="poke_song_ending.mp3">
+        <source src="pokemon_theme_song.mp3">
+      </audio>
+
+    </main>
+    <section id="mostarEstadistica">
+         
+    </section>
+    <section id="filtro-orden">
+      <div class="filtro">
         <label>Filtrar por tipo </label>
         <select data-testid="select-filter" name="type">
           <option value="">Elegir tipo</option>
@@ -23,8 +39,8 @@
           <option value="Eléctrico">Eléctrico</option>
           <option value="Volador">Volador</option>
         </select><br>
-        
-  
+     </div>
+     <div class="ordenamiento">
         <label>Ordenar</label>
         <select data-testid="select-sort">
           <option value="">Ordenar por</option>
@@ -35,19 +51,18 @@
           <option value="weight-asc">Peso ascendente</option>
           <option value="weight-desc">Peso descendente</option>
         </select><br>
-                 
+      </div>
+      <div class="boton">
         <button data-testid="button-clear">Limpiar</button>
-        <section id="mostarEstadistica">
-         
-        </section>
-      </aside>
-  
+      </div>
+      </section>
+
       <section id="root">
        
       </section>
-    </main>
+      
     <footer>
-      <p>Autoras: Hilda García - Yamileth Caldera </p>
+      <p><strong>Autor: Hilda García - Yamileth Caldera</strong></p>
     </footer>
     <script src="main.js" type="module"></script>
   </body>
