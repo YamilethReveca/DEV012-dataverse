@@ -61,6 +61,7 @@ button{
 
 }
 
+
 section label, section select, section button {
   margin-right: 10px; /* Agrega espacio entre los elementos */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -68,7 +69,9 @@ section label, section select, section button {
 }
 
 
-
+h3{
+ text-align: center;
+}
 
 #root{
   display: flex;
