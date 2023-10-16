@@ -1,20 +1,15 @@
 export default [
 
-  // SE DEBE AGREGAR 24 POKEMONES HICE 4 TIPOS DE POKEMONES CON 3 DE POKEMONES CADA UNO. 
-  //3 FUEGO, 3 AGUA, 3 TIERRA Y 3 VOLADOR.
-
-  // FALTA AGREGAR LOS OTROS QUE DEN UN TOTAL DE 24 POKEMONES 
-    
   {
     "id": "arcanine",
     "name": "Arcanine",
     "shortDescription": "El Pokémon Legendario de Fuego",
     "description": "Arcanine es una criatura imponente y majestuosa en el mundo Pokémon. Con su pelaje dorado y su mirada feroz, encarna la fuerza y la nobleza. Es conocido por su velocidad y agilidad excepcionales, capaz de correr a velocidades asombrosas. Su lealtad hacia su entrenador es inquebrantable, y es un protector valiente. Arcanine también puede controlar el fuego, lanzando llamas ardientes desde su boca en poderosos ataques. Su presencia imponente y su habilidad para enfrentar cualquier desafío lo convierten en un Pokémon verdaderamente impresionante y respetado en el mundo Pokémon.",
-    "imgUrl": "https://pm1.aminoapps.com/6281/21395e697f33a74fecfd8eff8ed25d8adbe52405_hq.jpg",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/50/latest/20150621185018/Arcanine.png/1200px-Arcanine.png",
     "fact": {
       "mainField": "Fuego",
       "habilities": "Intimidación/ Absorbe Fuego",
-      "weight": "155.0 Kg",
+      "weight": 155.00,
     }
   },
  
@@ -23,11 +18,11 @@ export default [
     "name": "Charmander",
     "shortDescription": "Pokémon Lagartija",
     "description": "Charmander es un pequeño Pokémon de tipo Fuego con una llama en su cola. Es juguetón pero también vulnerable a la lluvia, ya que su llama se debilita con la humedad. Evoluciona a Charmeleon y finalmente a Charizard. Su carácter amigable y su determinación lo hacen un compañero leal y valiente. Charmander es conocido por su habilidad para lanzar llamas desde su cola y por su objetivo de convertirse en un poderoso dragón. Es un ícono en la franquicia Pokémon y un favorito de los entrenadores de todo el mundo.",
-    "imgUrl":"https://i.pinimg.com/564x/a4/30/fd/a430fda04c5be5420a6f8aa484f47945.jpg",
+    "imgUrl":"https://www.pngmart.com/files/13/Charmander-PNG-Transparent.png",
     "fact": {
       "mainField": "Fuego",
       "habilities": "Mar Llamas",
-      "weight": "8.5 Kg",
+      "weight": 8.50,
     }
   },
 
@@ -40,7 +35,7 @@ export default [
     "fact": {
       "mainField": "Fuego",
       "habilities": "Cuerpo Llama",
-      "weight": "21.4 Kg",
+      "weight": 21.40,
     }
   },
 
@@ -53,7 +48,7 @@ export default [
     "fact": {
       "mainField": "Agua",
       "habilities": "Torrente",
-      "weight": "9.0 Kg",
+      "weight": 9.00,
     }
   },
 
@@ -66,7 +61,7 @@ export default [
     "fact": {
       "mainField": "Agua",
       "habilities": "Absorve Agua",
-      "weight": "29.0 Kg",
+      "weight": 29.00,
     }
   },
 
@@ -79,7 +74,7 @@ export default [
     "fact": {
       "mainField": "Agua",
       "habilities":"Escama Especial Tenacidad",
-      "weight": "162. Kg",
+      "weight": 162.00,
    }
   },
 
@@ -92,7 +87,7 @@ export default [
     "fact": {
       "mainField": "Tierra",
       "habilities": "Velo Arena",
-      "weight": "29.5 Kg",
+      "weight": 29.50,
     }
   },
 
@@ -105,7 +100,7 @@ export default [
     "fact": {
       "mainField": "Tierra",
       "habilities": "Robustez",
-      "weight": "120.0 Kg",
+      "weight": 120.00,
     }
   },
 
@@ -115,11 +110,11 @@ export default [
     "name": "Hippowdon",
     "shortDescription": "El Pokémon hipopótamo",
     "description": "Hippowdon es un Pokémon de tipo Tierra que se asemeja a un imponente hipopótamo. Su piel es áspera y resistente, actuando como una armadura natural. Hippowdon tiene la capacidad de crear y controlar tormentas de arena a su alrededor, lo que le permite proteger su territorio y causar daño a sus enemigos. Es conocido por su naturaleza territorial y su disposición a defender su hábitat ferozmente. A pesar de su aspecto intimidante, Hippowdon es un protector valiente y un poderoso Pokémon que se gana el respeto en el mundo Pokémon por su habilidad en la batalla.",
-    "imgUrl": "https://p7.hiclipart.com/preview/415/275/738/5bbbb27a7fdf7.jpg",
+    "imgUrl": "https://www.pngplay.com/wp-content/uploads/11/Hippowdon-Pokemon-Transparent-PNG.png",
     "fact": {
       "mainField": "Tierra",
       "habilities":"Chorro Arena",
-      "weight": "300",
+      "weight": 300.00,
     }
   },
 
@@ -133,7 +128,7 @@ export default [
     "fact": {
       "mainField": "Volador",
       "habilities": "Vista Lince Tumbos",
-      "weight": "39.5 Kg",
+      "weight": 39.50,
     }
   },
 
@@ -147,7 +142,7 @@ export default [
     "fact": {
       "mainField": "Volador",
       "habilities": "Vista Lince",
-      "weight": "38.0 Kg",
+      "weight": 38.00,
     }
   },
 
@@ -156,11 +151,11 @@ export default [
     "name": "Tornadus",
     "shortDescription": "El Pokémon Torbellino",
     "description":"Tornadus es un Pokémon legendario de tipo Volador de la región de Teselia. Se caracteriza por su apariencia de genio del viento, con una gran melena de nubes y una actitud traviesa. Su capacidad para generar tormentas y vientos furiosos lo convierte en una fuerza impredecible de la naturaleza. Tornadus es conocido por su agilidad y su capacidad para causar estragos en el clima, siendo una criatura icónica de la serie Pokémon.",
-    "imgUrl": "https://w0.peakpx.com/wallpaper/363/587/HD-wallpaper-tornadus-pokemon-bulbapedia-the-community-driven-pokemon-encyclopedia.jpg",
+    "imgUrl": "https://www.pngplay.com/wp-content/uploads/12/Tornadus-Pokemon-Transparent-Image.png",
     "fact": {
       "mainField": "Volador",
       "habilities": "Forma Avatar - Forma Tótem",
-      "weight": "63.0 Kg",
+      "weight": 63.00,
     }
   },
 
@@ -173,7 +168,7 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Pelea con estilo",
-      "weight": "8.5 kg"
+      "weight": 8.50,
     }
   },
 
@@ -186,7 +181,7 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Cambio hoja",
-      "weight": "25.9 kg"
+      "weight": 25.90,
     }
   },
 
@@ -199,7 +194,7 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Refrigerador",
-      "weight": "89.0 kg"
+      "weight": 89.00,
     }
   },
 
@@ -212,7 +207,7 @@ export default [
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Disfraz",
-      "weight": "0.7 kg"
+      "weight": 0.70,
     }
   },
 
@@ -225,7 +220,7 @@ export default [
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Sombra traviesa",
-      "weight": "5.0 kg"
+      "weight": 5.00,
     }
   },
 
@@ -238,7 +233,7 @@ export default [
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Levitación",
-      "weight": "1.0 kg"
+      "weight": 1.00,
     }
   },
 
@@ -251,7 +246,7 @@ export default [
     "fact": {
       "mainField": "Dragón",
       "habilities": "Velo sagrado",
-      "weight": "20.6 kg"
+      "weight": 20.60,
     }
   },
   
@@ -265,7 +260,7 @@ export default [
     "fact": {
       "mainField": "Dragón",
       "habilities": "Cuerpo puro",
-      "weight": "3.3 kg"
+      "weight": 3.30,
     }
   },
 
@@ -279,7 +274,7 @@ export default [
     "fact": {
       "mainField": "Dragón",
       "habilities": "Hidratación",
-      "weight": "150 kg"
+      "weight": 150.00,
     }
   },
 
@@ -293,7 +288,7 @@ export default [
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Electricidad estática",
-      "weight": "6.0 kg"
+      "weight": 6.00,
     }
   },
 
@@ -306,7 +301,7 @@ export default [
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Absorber voltaje",
-      "weight": "24.5 kg"
+      "weight": 24.50,
     }
   },
 
@@ -319,7 +314,7 @@ export default [
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Espina trampa",
-      "weight": "3.3 kg"
+      "weight": 3.30,
     }
   },
 ];
