@@ -15,6 +15,7 @@
     </header>
     <main>     
        <section id="filtro-orden-button">
+        <div class="filter-sort-button-container">
         <label>Filtrar por tipo </label>
         <select data-testid="select-filter" name="type">
           <option value="">Elegir tipo</option>
@@ -26,7 +27,9 @@
           <option value="Tierra">Tierra</option>
           <option value="Eléctrico">Eléctrico</option>
           <option value="Volador">Volador</option>
-        </select><br>
+        </select>
+      </div>
+      <div class="filter-sort-button-container">
         <label>Ordenar</label>
         <select data-testid="select-sort">
           <option value="">Ordenar por</option>
@@ -36,8 +39,11 @@
           <option value="habilities-desc">Habilidades Z-A </option>
           <option value="weight-asc">Peso ascendente</option>
           <option value="weight-desc">Peso descendente</option>
-        </select><br>
+        </select>
+      </div>
+      <div class="filter-sort-button-container">
         <button data-testid="button-clear">Limpiar</button>
+      </div>
       </section>
       <h2>Estadistica Pokémon</h2>
       <section id="mostarEstadistica">         
