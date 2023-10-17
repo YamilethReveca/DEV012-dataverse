@@ -4,13 +4,17 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />    
   </head>
   <body>
-    <header><h1><img id="logo" src="https://jolstatic.fr/www/captures/1951/1/58341-640.png"></h1></header>
-    <main>
-      <h2>Bienvenido al mundo Pokémon, puedes filtrar y ordenar los pokemones como desees</h2>
-       <section id="filtro-orden">
+    <header>
+      <h1>
+        <img id="logo" src="imageUrl/imageLogo.png"><br>
+        <img src="imageUrl/bienvenido.png">
+      </h1>    
+    </header>
+    <main>     
+       <section id="filtro-orden-button">
         <label>Filtrar por tipo </label>
         <select data-testid="select-filter" name="type">
           <option value="">Elegir tipo</option>
@@ -35,7 +39,7 @@
         </select><br>
         <button data-testid="button-clear">Limpiar</button>
       </section>
-      <h3>Estadistica Pokémon</h3>
+      <h2>Estadistica Pokémon</h2>
       <section id="mostarEstadistica">         
       </section>
       <section id="root">      

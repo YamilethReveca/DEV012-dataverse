@@ -10,9 +10,9 @@ let li= document.createElement("li");  // creamos en li
 li.classList.add("tarjetas");
 
 li.innerHTML= "";  // inicializamos el li vacio.
-let content =`<dl><img src="${pokemon.imgUrl}" alt="${pokemon.id}">
+let content =`<dl><img class="imgTarjeta" src="${pokemon.imgUrl}" alt="${pokemon.id}">
 <dt><strong>Nombre:</dt><dd itemprop="name">${pokemon.name}</strong></dd>
-<dt><strong>Corta descripción:</strong></dt><dd class="estilo" itemprop="shortDescription">${pokemon.shortDescription}</dd>
+<dt><strong>Corta descripción:</strong></dt><dd itemprop="shortDescription">${pokemon.shortDescription}</dd>
 <dt><strong>Descripción:</strong></dt><dd class="estilo" itemprop="description">${pokemon.description}</dd>`;
 
 // Accede a los valores dentro del objeto 'fact'
@@ -20,7 +20,7 @@ let content =`<dl><img src="${pokemon.imgUrl}" alt="${pokemon.id}">
 let fact = pokemon.fact;
 if (fact) {
   content += `<dt><strong>Campo principal:</strong></dt><dd itemprop="mainField">${fact.mainField}</dd>
-  <dt><strong>Habilidades:</strong></dt><dd class="estilo" itemprop="habilities">${fact.habilities}</dd>
+  <dt><strong>Habilidades:</strong></dt><dd itemprop="habilities">${fact.habilities}</dd>
   <dt><strong>Peso:</strong></dt><dd itemprop="weight">${fact.weight} Kg</dd></dl>`;
 }
 
