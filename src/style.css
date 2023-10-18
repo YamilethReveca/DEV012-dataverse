@@ -16,29 +16,15 @@ header{
   border-radius: 50%;
 }
 
-main{
-  width: auto; /* Cambia a un ancho automático si es necesario */
-  text-align: center;
-}
-
 h1 img{
   width: 500px;
   background-repeat: no-repeat;
   background-size:cover;   
 }
 
-h2 {
+main{
+  width: auto; /* Cambia a un ancho automático si es necesario */
   text-align: center;
-}
-
-.imgTarjeta{
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin:0 auto;
-  margin-top: 20px;
-  border-radius: 50%;
-  border: 3px solid rgb(36, 36, 240);
 }
 
 select{  
@@ -59,58 +45,18 @@ select{
   border-radius: 12px;
   position: relative;
   transition: all 0.25s ease;
-  
-  
-    
 }
 
-/* 
-#filtrar-ordenar-button{
-
-  width: 33%;     
-  align-items: center;
-  justify-content: center; 
-  flex-wrap: wrap; /* Permite que los elementos se ajusten al ancho de la pantalla */
-/* } */ */
-
-select select:hover{
-	background: #B1E8CD;
-  
-}
-
-select i{
-	position: absolute;
-	right: 20px;
-	top: calc(50% - 13px);
-	width: 16px;
-	height: 16px;
-	display: block;
-	border-left:4px solid #2AC176;
-	border-bottom:4px solid #2AC176;
-	transform: rotate(-45deg); /* Giramos el cuadrado */
-	transition: all 0.25s ease;
-}
-
- 
 section label, section select, section button {
   margin: 10px; /* Agrega espacio entre los elementos */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18px; /* Tamaño de fuente reducido para dispositivos móviles */
-  
 }
-
-h2{
-  text-align: center;
-  font-size: 18px;
-  font-family:'Quicksand', sans-serif; 
-
-}
-
 
 .filter-sort-button-container {
   display: inline-block;
   text-align: center;
-      
+  flex-wrap: wrap; /* Permite que los elementos se ajusten al ancho de la pantalla */
 }
 
 .filter-sort-button-container div {
@@ -124,36 +70,23 @@ h2{
   margin-bottom: 5px;
   font-size: 18px;
   font-family:'Quicksand', sans-serif; 
-  color: rgb(68, 68, 247);
-
-
-
+  color: black;
 }
 
 .filter-sort-button-container select {
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 7px 10px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   font-size: 18px;
   font-family:'Quicksand', sans-serif; 
-
 }
 
 .filter-sort-button-container button {
   padding: 7px 10px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  background: #f0f0f0;
-}
-
-
-#root {
-  display: flex;
-  flex-direction: column; /* Cambia la dirección del flexbox a vertical para dispositivos móviles */
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;  
+  background: #f0f0f0;  
 }
 
 button[data-testid="button-clear"]{  
@@ -184,10 +117,84 @@ button[data-testid="button-clear"]:hover {
   text-decoration: none;
 }
 
+button[data-testid="button-clear"]{  
+  font-size: 18px;
+  font-family:'Quicksand', sans-serif;  
+  background: #eb94d0;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: #2e229c;
+  font-size: 20px;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+  
+button[data-testid="button-clear"]:hover {
+  background: #2079b0;
+  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+  text-decoration: none;
+}
+
+h2{
+  text-align: center;
+  font-size: 18px;
+  font-family:'Quicksand', sans-serif; 
+}
+
+#mostrarEstadistica{
+  width: 100%;
+  text-align: center; /* Centra los elementos en el contenedor horizontalmente */
+}
+
+li{
+  display: inline-block;
+  list-style: none;
+  border: 2px solid rgb(88, 88, 243);
+  background-image: linear-gradient(to bottom, #FFB6C1, #a4a4d8);
+  padding: 10px;
+  font-size: 18px;
+  font-family:'Quicksand', sans-serif;   
+  text-align: center;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
 ul{
   text-align: center;
   width: 100%;
   padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del flexbox a vertical para dispositivos móviles */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  
+}
+
+.imgTarjeta{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin:0 auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 3px solid rgb(36, 36, 240);
 }
 
 .tarjetas{
@@ -196,12 +203,9 @@ ul{
   list-style: none;
   margin: 5px;
   height: 700px;
-  display: flexbox;
   float: left;
   padding: 5px;
   background-image: url("imageUrl/tarjetaPokemon2.jpg");
-  flex-direction: column; /* Apila los contenidos verticalmente */
-  align-items: center; /* Centra los contenidos verticalmente */
   width:calc(25% - 10px);
   text-align: center;
   box-sizing: border-box;
@@ -209,9 +213,8 @@ ul{
   background-size:cover; 
   font-size: 18px;
   font-family:'Quicksand', sans-serif; 
-
-
-  
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 dl {
@@ -225,13 +228,16 @@ dd{
   border: 4px solid black;
   margin: 10px; /* Agrega margen entre los elementos */
   padding: 10px; /* Ajusta el relleno según sea necesario */
-  background-color: #2271b3;
+  background-color: #90c8f7;
   text-align: center;
   max-width: 90%; /* Aprovecha más espacio en la pantalla de dispositivos móviles */
   white-space: nowrap; /* Evita el salto de línea */
   overflow: hidden; /* Oculta el contenido desbordado */
   text-overflow: ellipsis;
   box-sizing: border-box;
+  font-size: 18px;
+  font-family:'Quicksand', sans-serif;
+  color: blue;
 }
 
 .estilo{
@@ -247,29 +253,7 @@ dt{
   display: flex; /* Utiliza flexbox para distribuir el ancho */
   width: 100%; /* Aprovecha el ancho completo de la pantalla de dispositivos móviles */
   text-align: center;
-}
-
-#mostrarEstadistica{
-  width: 100%;
-  text-align: center; /* Centra los elementos en el contenedor horizontalmente */
-
-}
-
-
-li{
-  display: inline-block;
-  list-style: none;
-  border: 1px solid black;
-  background-image: linear-gradient(to bottom, #FFB6C1, #a4a4d8);
-  padding: 10px;
-  font-size: 18px;
-  font-family:'Quicksand', sans-serif; 
-  color: blue;
-  text-align: center;
-  margin: 10px 0;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+  
 }
     
 .filtered-dt, .filtered-dd {
@@ -277,102 +261,92 @@ li{
 }
 
 footer{
-  float: right;
+  float: left;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 18px;
-  text-align: center;
-  padding: 10px;
+  font-size: 20px;  
 }
 
+/* dispostivo tablet */
 
-
-/* tablet */
-
-@media (max-width: 768px){
-
-  main {
-    display: flex; /* Agrega un display flex al contenedor principal */
-    flex-direction: column;
-  }
-
+@media (max-width: 768px) {
   #logo {
-    width: 300px;
+    width: 100px;
+    height: 100px;
   }
 
-  #filtro-orden-button{
+  .filter-sort-button-container {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: center;
   }
-  
+
   #root {
     width: 100%;
   }
 
-.tarjetas {
-  width:calc(50% - 10px);
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-#mostrarEstadistica {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center; /* Centra horizontalmente las tarjetas en el contenedor */
-  align-items: center; /* Centra verticalmente las tarjetas en el contenedor */
-  text-align: center;
+  .tarjetas {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centra verticalmente las tarjetas en la columna */
   }
 
-  li{
+  #mostrarEstadistica {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente las tarjetas en el contenedor */
+    align-items: center; /* Centra verticalmente las tarjetas en el contenedor */
+    text-align: center;
+  }
+
+  li {
     width: 100%;
     margin: 0;
+    white-space: normal; /* Restaura el salto de línea en el texto */
+    overflow: visible; /* Hace visible el contenido desbordado */
   }
 
-} 
-
-
-/* telefono */
-
-
-@media (max-width: 480px){
-
-  main {
-  display: flex; /* Agrega un display flex al contenedor principal */
-  flex-direction: column;
+  .imgTarjeta {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 3px solid rgb(36, 36, 240);
   }
 
-#logo {
-  width: 200px;
+  .estilo {
+    white-space: normal;
+    text-overflow: clip;
+  }
+ 
+  dd {
+    white-space: normal;
+    overflow: visible;
+    max-width: 100%; /* Aprovecha el ancho completo de la pantalla en tabletas */
   }
 
-#filtro-orden-button {
-  width: 100%;
-  text-align: center;
-    
+  dt {
+    white-space: normal;
+    overflow: visible;
+    max-width: 100%;
+
   }
 
-.tarjetas {
-  width: calc(33.33% - 10px); /* Ancho del 33.33% para mostrar 3 tarjetas por fila */
-  margin-left: 10px;
-  margin-bottom: 10px;
-  text-align: center
-  
-  }
-
-#mostrarEstadistica {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center; /* Centra horizontalmente las tarjetas en el contenedor */
-  align-items: center; /* Centra verticalmente las tarjetas en el contenedor */
-  }
 }
 
 
-  
+/* dispostivo movil */
+
+@media (max-width:480px){
 
 
 
+}

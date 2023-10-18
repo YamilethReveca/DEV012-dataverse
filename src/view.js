@@ -34,7 +34,6 @@ ul.appendChild(li)
 // // desde aqui vamos a construir la estadistica
 export const renderStats=(estadisticas)=>{
 
-
 const ulElement = document.createElement("ul");
 const li1 = document.createElement("li");
 li1.innerHTML = `Promedio de peso: ${estadisticas.averageWeight} Kg`;
