@@ -346,7 +346,23 @@ footer{
 /* dispostivo movil */
 
 @media (max-width:480px){
+  
+  #root {
+    width: 100%;
+  }
 
+  .tarjetas {
+    width: calc(100% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centra verticalmente las tarjetas en la columna */
+  }
+ 
+  h1 img{
+    width:100%;
+  }
 
 
 }
