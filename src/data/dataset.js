@@ -264,6 +264,7 @@ export default [
       "weight": 3.30,
     }
   },
+
   
   {
     "id": "goodra",
@@ -277,6 +278,7 @@ export default [
       "weight": 150.00,
     }
   },
+
   
   {
     "id": "pikachu",
