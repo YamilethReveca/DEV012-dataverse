@@ -50,7 +50,3 @@ const sortedData = sortData(filteredData, arraySort[0], arraySort[1]);
   section.appendChild(renderItems(sortedData));
 });
 
-// eventos listener 
-//querySelector y document.getElementById si es necesario.
-//click para el boton
-//change para el select .

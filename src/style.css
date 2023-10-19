@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9a58503ac53e21fc13f0e0d5e38a9eaf7d198c2
 body{
   background-image: url("https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/go/pokemon-party.jpg");
   background-repeat: no-repeat;
@@ -10,7 +14,11 @@ header{
 
 #logo{
   width: 200px;
+<<<<<<< HEAD
   height: auto;
+=======
+  height: 200px;
+>>>>>>> f9a58503ac53e21fc13f0e0d5e38a9eaf7d198c2
   border: 2px solid blue;
   border-radius: 50%;
 }
@@ -28,12 +36,18 @@ main{
 
 select{  
   display: inline;
+<<<<<<< HEAD
   width: 100%;
   cursor: pointer;
+=======
+	width: 100%;
+	cursor: pointer;
+>>>>>>> f9a58503ac53e21fc13f0e0d5e38a9eaf7d198c2
   padding: 7px 10px;
   height: 42px;
   outline: 0; 
   border: 0;
+<<<<<<< HEAD
   border-radius: 0;
   background: #f0f0f0;
   color: #7b7b7b;
@@ -41,6 +55,15 @@ select{
   color: #999;
   font-family:'Quicksand', sans-serif;
   border:2px solid rgba(0,0,0,0.2);
+=======
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family:'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+>>>>>>> f9a58503ac53e21fc13f0e0d5e38a9eaf7d198c2
   border-radius: 12px;
   position: relative;
   transition: all 0.25s ease;
