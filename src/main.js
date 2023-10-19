@@ -31,8 +31,8 @@ clearButton.addEventListener("click", function (event) {
 
 // funcionamiento del filtro.
 let filteredData; 
-selectFilter.addEventListener("change", function () {
-  const selectedValue = selectFilter.value;
+selectFilter.addEventListener("change", function (event) {
+  const selectedValue = event.target.value;
   filteredData = filterData(data, "mainField", selectedValue);
   section.innerHTML="";
   section.appendChild(renderItems(filteredData));
@@ -42,8 +42,8 @@ selectFilter.addEventListener("change", function () {
 });
 
 //ordenamiento
-selectSort.addEventListener("change", function () {
-const selectedValue = selectSort.value;
+selectSort.addEventListener("change", function (event) {
+const selectedValue = event.target.value;
 const arraySort= selectedValue.split("-");
 const sortedData = sortData(filteredData, arraySort[0], arraySort[1]);  
   section.innerHTML = "";

@@ -10,6 +10,7 @@ export default [
       "mainField": "Fuego",
       "habilities": "Intimidación",
       "weight": 155.00,
+
     }
   },
  
@@ -164,7 +165,7 @@ export default [
     "name": "Cubchoo",
     "shortDescription": "Pokémon tipo hielo",
     "description": "Cubchoo es un pequeño Pokémon tipo hielo conocido por su nariz que gotea. Vive en climas fríos y se alimenta de bayas congeladas. Cuando se enfada, su aliento puede congelar el aire.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.6Z6F4A46Z1_lCsPO9pg_?pid=ImgGn",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/22/latest/20210831195005/Cubchoo.png/1200px-Cubchoo.png",
     "fact": {
       "mainField": "Hielo",
       "habilities": "Pelea con estilo",
@@ -177,7 +178,7 @@ export default [
     "name": "Glaceon",
     "shortDescription": "Pokémon tipo hielo",
     "description": "Glaceon es una evolución especial de Eevee. Su pelaje brillante y cristalino refleja la luz de la luna en noches estrelladas. Puede congelar instantáneamente el aire a su alrededor.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.cEaZH0jJzd99tCkitZMC?pid=ImgGn",
+    "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c1eeb835-3207-496c-939a-9f07173e853e/d5swafy-61e990d9-f681-405d-bf4a-efe127e2ce16.png/v1/fill/w_1024,h_1338/glaceon_sitting_png_by_proteusiii_d5swafy-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzOCIsInBhdGgiOiJcL2ZcL2MxZWViODM1LTMyMDctNDk2Yy05MzlhLTlmMDcxNzNlODUzZVwvZDVzd2FmeS02MWU5OTBkOS1mNjgxLTQwNWQtYmY0YS1lZmUxMjdlMmNlMTYucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.m2yniMQQhoBzERRIUDq1LVdzp5iNi2MWE9xuRAWVdJ0",
     "fact": {
       "mainField": "Hielo",
       "habilities": "Cambio hoja",
@@ -190,7 +191,7 @@ export default [
     "name": "Eiscue",
     "shortDescription": "Pokémon tipo hielo",
     "description": "Eiscue es un curioso Pokémon con una cabeza de hielo que cambia de expresión según su estado de ánimo. Puede crear ráfagas de frío extremo y vive en climas fríos.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.pArSYR5.XtmOyPIrnEbG?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f6/latest/20200307024653/Eiscue.png",
     "fact": {
       "mainField": "Hielo",
       "habilities": "Refrigerador",
@@ -203,7 +204,7 @@ export default [
     "name": "Mimikyu",
     "shortDescription": "Pokémon tipo fantasma-hada",
     "description": "Mimikyu es un Pokémon tímido y solitario que se esconde bajo un disfraz hecho a mano. Anhela la compañía de otros Pokémon y hará cualquier cosa para ganar su afecto.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.Dg5s1LJLly0t_pzkr7tO?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/41/latest/20160720213413/Mimikyu.png/800px-Mimikyu.png",
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Disfraz",
@@ -216,7 +217,7 @@ export default [
     "name": "Pumpkaboo",
     "shortDescription": "Pokémon tipo fantasma-planta",
     "description": "Pumpkaboo es un misterioso Pokémon con forma de calabaza. Se oculta en la oscuridad y asusta a los viajeros desprevenidos. Su cuerpo brilla en la noche.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.ETud2MvUOA2CPlz.JlZy?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/4/4a/latest/20190425220828/Pumpkaboo.png",
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Sombra traviesa",
@@ -229,7 +230,7 @@ export default [
     "name": "Misdreavus",
     "shortDescription": "Pokémon tipo fantasma",
     "description": "Misdreavus es un travieso Pokémon tipo fantasma que disfruta asustando a las personas con sus chillidos. Se cree que su gemido puede causar pesadillas.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.5s3OYdi9nI4etVA_oxty?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/6/6c/latest/20230627210211/Misdreavus.png/800px-Misdreavus.png",
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Levitación",
@@ -242,7 +243,7 @@ export default [
     "name": "Altaria",
     "shortDescription": "Pokémon tipo dragón/volador",
     "description": "Altaria es un Pokémon tipo dragón/volador conocido por su belleza y suavidad. Su cuerpo está cubierto de plumas blancas y esponjosas que le permiten volar por los cielos con gracia. A pesar de su aspecto apacible, Altaria puede ser un adversario formidable en batalla.",
-    "imgUrl": "https://th.bing.com/th/id/OIG..yMEkp9VbMX2iBpfgRp0?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/24/latest/20141102005820/Altaria.png/1200px-Altaria.png",
     "fact": {
       "mainField": "Dragón",
       "habilities": "Velo sagrado",
@@ -256,35 +257,33 @@ export default [
     "name": "Dratini",
     "shortDescription": "Pokémon tipo dragón",
     "description": "Dratini es un Pokémon serpenteante de tipo dragón. Su cuerpo es largo y elegante. Se dice que este Pokémon tiene una mirada hipnótica que atrae a otros.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.4KVMz6JR.tkuVAG39PmZ?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://i.pinimg.com/originals/5c/e4/22/5ce4229fefe3825d12618d0e4aaf9852.png",
     "fact": {
       "mainField": "Dragón",
       "habilities": "Cuerpo puro",
       "weight": 3.30,
     }
   },
-
   
   {
     "id": "goodra",
     "name": "Goodra",
     "shortDescription": "Dragón",
     "description": "Goodra es un Pokémon tipo dragón/babas conocido por su apariencia amigable y su capacidad para controlar babas pegajosas. A pesar de su aspecto, es un poderoso Pokémon que puede lanzar poderosos ataques de tipo dragón.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.UEyTfa1Ez_A0H21KJrAk?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/a/af/latest/20230317213336/Artwork_Goodra_UNITE.png",
     "fact": {
       "mainField": "Dragón",
       "habilities": "Hidratación",
       "weight": 150.00,
     }
   },
-
   
   {
     "id": "pikachu",
     "name": "Pikachu",
     "shortDescription": "Eléctrico",
     "description": "Pikachu es uno de los Pokémon más icónicos y queridos. Su cola actúa como una antena y puede generar descargas eléctricas. Siempre lleva consigo una sonrisa en su rostro.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.erjRulMVvWtgshNN9_Hv?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://i.pinimg.com/originals/5c/da/5d/5cda5d5de9f11ecf7c18a96307adc691.png",
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Electricidad estática",
@@ -297,7 +296,7 @@ export default [
     "name": "Jolteon",
     "shortDescription": "Pokémon tipo eléctrico",
     "description": "Jolteon es un Pokémon eléctrico conocido por su velocidad y sus puntiagudas púas cargadas de electricidad. Es capaz de generar rayos en cualquier momento.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.I8Rdt9xAtUFEUQErrIVa?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn",
+    "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/22a4cfd7-42eb-49ab-939a-0314c4777e33/dg4f7vu-7ee79d4a-0006-48c0-97cd-51c3416ce641.png/v1/fill/w_880,h_880/jolteon_png_by_pablozilla_rex91_dg4f7vu-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODgwIiwicGF0aCI6IlwvZlwvMjJhNGNmZDctNDJlYi00OWFiLTkzOWEtMDMxNGM0Nzc3ZTMzXC9kZzRmN3Z1LTdlZTc5ZDRhLTAwMDYtNDhjMC05N2NkLTUxYzM0MTZjZTY0MS5wbmciLCJ3aWR0aCI6Ijw9ODgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.5Bb0qUm9Yk6uUN0nnUog2iPCnHpm_y_kb0-wFYo0R4Y",
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Absorber voltaje",
@@ -310,7 +309,7 @@ export default [
     "name": "Togedemaru",
     "shortDescription": "Pokémon tipo eléctrico-acero",
     "description": "Togedemaru es un pequeño Pokémon con un cuerpo cubierto de espinas que usa para defenderse. Su pelaje de acero lo protege de ataques eléctricos.",
-    "imgUrl": "https://th.bing.com/th/id/OIG.LQ4JQL7OdD5zAow2hRt0?pid=ImgGn",
+    "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/8b/latest/20160920200604/Togedemaru.png/1200px-Togedemaru.png",
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Espina trampa",

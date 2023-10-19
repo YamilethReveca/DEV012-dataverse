@@ -10,7 +10,7 @@ let li= document.createElement("li");  // creamos en li
 li.classList.add("tarjetas");
 
 li.innerHTML= "";  // inicializamos el li vacio.
-let content =`<dl><img class="imgTarjeta" src="${pokemon.imgUrl}" alt="${pokemon.id}">
+let content =`<dl itemscope itemtype="tarjetaPokemon"><img class="imgTarjeta" src="${pokemon.imgUrl}" alt="${pokemon.id}">
 <dt><strong>Nombre:</dt><dd itemprop="name">${pokemon.name}</strong></dd>
 <dt><strong>Corta descripción:</strong></dt><dd itemprop="shortDescription">${pokemon.shortDescription}</dd>
 <dt><strong>Descripción:</strong></dt><dd class="estilo" itemprop="description">${pokemon.description}</dd>`;

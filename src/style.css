@@ -3,7 +3,7 @@ body{
   background-image: url("https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/go/pokemon-party.jpg");
   background-repeat: no-repeat;
   background-size:cover; 
-}
+ }
 
 header{
   text-align: center;
@@ -45,6 +45,7 @@ select{
   border-radius: 12px;
   position: relative;
   transition: all 0.25s ease;
+  text-align: center;
 }
 
 section label, section select, section button {
@@ -57,12 +58,6 @@ section label, section select, section button {
   display: inline-block;
   text-align: center;
   flex-wrap: wrap; /* Permite que los elementos se ajusten al ancho de la pantalla */
-}
-
-.filter-sort-button-container div {
-  flex: 1;
-  margin-right: 10px;
-  text-align: center;
 }
 
 .filter-sort-button-container label {
@@ -87,34 +82,6 @@ section label, section select, section button {
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   background: #f0f0f0;  
-}
-
-button[data-testid="button-clear"]{  
-  font-size: 18px;
-  font-family:'Quicksand', sans-serif;  
-  background: #eb94d0;
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  text-shadow: 3px 2px 1px #9daef5;
-  -webkit-box-shadow: 6px 5px 24px #666666;
-  -moz-box-shadow: 6px 5px 24px #666666;
-  box-shadow: 6px 5px 24px #666666;
-  font-family: Arial;
-  color: #2e229c;
-  font-size: 27px;
-  padding: 10px;
-  text-decoration: none;
-}
-  
-button[data-testid="button-clear"]:hover {
-  background: #2079b0;
-  background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
-  background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
-  background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
-  background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
-  background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
-  text-decoration: none;
 }
 
 button[data-testid="button-clear"]{  
@@ -185,7 +152,7 @@ ul{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;  
-}
+ }
 
 .imgTarjeta{
   width: 100px;
@@ -215,6 +182,7 @@ ul{
   font-family:'Quicksand', sans-serif; 
   justify-content: center;
   flex-wrap: wrap;
+  color: #333333;
 }
 
 dl {
@@ -237,7 +205,7 @@ dd{
   box-sizing: border-box;
   font-size: 18px;
   font-family:'Quicksand', sans-serif;
-  color: blue;
+  color: blue; 
 }
 
 .estilo{
@@ -253,7 +221,8 @@ dt{
   display: flex; /* Utiliza flexbox para distribuir el ancho */
   width: 100%; /* Aprovecha el ancho completo de la pantalla de dispositivos móviles */
   text-align: center;
-  
+  align-items: center;
+  justify-content: center;
 }
     
 .filtered-dt, .filtered-dd {
@@ -337,12 +306,8 @@ footer{
     white-space: normal;
     overflow: visible;
     max-width: 100%;
-
   }
-
 }
-
-
 /* dispostivo movil */
 
 @media (max-width:480px){
@@ -363,6 +328,4 @@ footer{
   h1 img{
     width:100%;
   }
-
-
 }
