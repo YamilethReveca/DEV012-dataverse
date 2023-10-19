@@ -4,66 +4,53 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Oculta los controles del reproductor de audio */
-      audio {
-        display: none;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />    
   </head>
   <body>
-    <header><h1><img id="logo" src="logo pokemon..png"></h1></header>
-    <main>
-      <h2><img id="bienvenido" src="pokemon salto.gif" alt="Imagen de bienvenida"></h2>
-      <audio controls autoplay >
-        <source src="poke_song_ending.mp3">
-        <source src="pokemon_theme_song.mp3">
-      </audio>
-
-    </main>
-    
-    <section id="filtro-orden">
-      <div class="filtro">
-        <label>Filtrar por tipo </label>
-        <select data-testid="select-filter" name="type">
-          <option value="">Elegir tipo</option>
-          <option value="Agua">Agua</option>
-          <option value="Dragón">Dragón</option>      
-          <option value="Fantasma">Fantasma</option>
-          <option value="Fuego">Fuego</option>
-          <option value="Hielo">Hielo</option>
-          <option value="Tierra">Tierra</option>
-          <option value="Eléctrico">Eléctrico</option>
-          <option value="Volador">Volador</option>
-        </select><br>
-     </div>
-     <div class="ordenamiento">
-        <label>Ordenar</label>
-        <select data-testid="select-sort">
-          <option value="">Ordenar por</option>
-          <option value="name-asc">Nombre A-Z</option>
-          <option value="name-desc">Nombre Z-A</option>
-          <option value="habilities-asc">Habilidades A-Z</option>
-          <option value="habilities-desc">Habilidades Z-A </option>
-          <option value="weight-asc">Peso ascendente</option>
-          <option value="weight-desc">Peso descendente</option>
-        </select><br>
-      </div>
-      <div class="boton">
-        <button data-testid="button-clear">Limpiar</button>
-      </div>
+    <header>
+      <h1>
+        <img id="logo" src="imageLogo.png"><br>
+        <img src="bienvenido.png">
+      </h1>    
+    </header>
+    <main>     
+      <section id="filtro-orden-button">
+        <div class="filter-sort-button-container">
+          <label><strong>Filtrar por tipo</strong></label>
+          <select data-testid="select-filter" name="type">
+            <option value="">Elegir tipo</option>
+            <option value="Agua">Agua</option>
+            <option value="Dragón">Dragón</option>      
+            <option value="Fantasma">Fantasma</option>
+            <option value="Fuego">Fuego</option>
+            <option value="Hielo">Hielo</option>
+            <option value="Tierra">Tierra</option>
+            <option value="Eléctrico">Eléctrico</option>
+            <option value="Volador">Volador</option>
+          </select>
+        </div>
+        <div class="filter-sort-button-container">
+          <label><strong>Ordenar</strong></label>
+          <select data-testid="select-sort">
+            <option value="">Ordenar por</option>
+            <option value="name-asc">Nombre A-Z</option>
+            <option value="name-desc">Nombre Z-A</option>
+            <option value="habilities-asc">Habilidades A-Z</option>
+            <option value="habilities-desc">Habilidades Z-A </option>
+            <option value="weight-asc">Peso ascendente</option>
+            <option value="weight-desc">Peso descendente</option>
+          </select>
+        </div>
+        <div class="filter-sort-button-container">
+          <button data-testid="button-clear">Limpiar</button>
+        </div>
       </section>
-      <section id="mostarEstadistica">
-        <h3>Estadistica Pokémon</h3>
-  
-           
+      <h2>Estadistica Pokémon</h2>
+      <section id="mostarEstadistica">         
       </section>
-
-      <section id="root">
-       
-      </section>
-      
+      <section id="root">      
+      </section> 
+    </main>     
     <footer>
       <p><strong>Autor: Hilda García - Yamileth Caldera</strong></p>
     </footer>
