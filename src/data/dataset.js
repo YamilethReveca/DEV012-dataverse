@@ -155,8 +155,8 @@ export default [
     "imgUrl": "https://www.pngplay.com/wp-content/uploads/12/Tornadus-Pokemon-Transparent-Image.png",
     "fact": {
       "mainField": "Volador",
-      "habilities": "Forma Avatar",
-      "weight": "63.00",
+      "pokemonHabilities": "Forma Avatar",
+      "pokemonWeight": "63.00",
     }
   },
 
@@ -164,158 +164,157 @@ export default [
     "id": "cubchoo",
     "name": "Cubchoo",
     "shortDescription": "Pokémon tipo hielo",
-    "description": "Cubchoo es un pequeño Pokémon tipo hielo conocido por su nariz que gotea. Vive en climas fríos y se alimenta de bayas congeladas. Cuando se enfada, su aliento puede congelar el aire.",
+    "description": "Cubchoo es un Pokémon de tipo hielo de lo más encantador. Su nariz siempre goteante es su característica más distintiva y tierna. Este pequeño habitante de climas fríos se alimenta de bayas congeladas y su pelaje blanco lo ayuda a camuflarse en entornos nevados. Cuando se enfada, Cubchoo exhala un aliento helado que puede congelar el aire y crear una impresionante nevada. Su naturaleza juguetona y su devoción por su entrenador lo convierten en un compañero leal y adorable para cualquier equipo. Los entrenadores que elijan a Cubchoo estarán encantados con su dulzura y su potencial en batallas tipo hielo.",
     "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/22/latest/20210831195005/Cubchoo.png/1200px-Cubchoo.png",
     "fact": {
       "mainField": "Hielo",
-      "habilities": "Pelea con estilo",
-      "weight": "8.50",
+      "pokemonHabilities": "Pelea con estilo",
+      "pokemonWeight": "8.50",
     }
   },
-
+  
   {
     "id": "glaceon",
     "name": "Glaceon",
     "shortDescription": "Pokémon tipo hielo",
-    "description": "Glaceon es una evolución especial de Eevee. Su pelaje brillante y cristalino refleja la luz de la luna en noches estrelladas. Puede congelar instantáneamente el aire a su alrededor.",
-    "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c1eeb835-3207-496c-939a-9f07173e853e/d5swafy-61e990d9-f681-405d-bf4a-efe127e2ce16.png/v1/fill/w_1024,h_1338/glaceon_sitting_png_by_proteusiii_d5swafy-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMzOCIsInBhdGgiOiJcL2ZcL2MxZWViODM1LTMyMDctNDk2Yy05MzlhLTlmMDcxNzNlODUzZVwvZDVzd2FmeS02MWU5OTBkOS1mNjgxLTQwNWQtYmY0YS1lZmUxMjdlMmNlMTYucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.m2yniMQQhoBzERRIUDq1LVdzp5iNi2MWE9xuRAWVdJ0",
+    "description": "Glaceon, una evolución especial de Eevee, es un deslumbrante Pokémon de tipo hielo. Su pelaje brillante y cristalino refleja la luz de la luna en noches estrelladas, creando una visión de belleza inigualable. Pero la elegancia de Glaceon va más allá de su apariencia, ya que tiene la capacidad de congelar instantáneamente el aire circundante, creando un manto de hielo y frío en su entorno. Los entrenadores que sueñan con un Pokémon que combine elegancia y poder en el tipo hielo encontrarán en Glaceon a su aliado perfecto.",
+    "imgUrl": "https://d275t8dp8rxb42.cloudfront.net/pokemon/portrait/Glaceon.png",
     "fact": {
       "mainField": "Hielo",
-      "habilities": "Cambio hoja",
-      "weight": "25.90",
+      "pokemonHabilities": "Cambio hoja",
+      "pokemonWeight": "25.90",
     }
   },
-
+  
   {
     "id": "eiscue",
     "name": "Eiscue",
     "shortDescription": "Pokémon tipo hielo",
-    "description": "Eiscue es un curioso Pokémon con una cabeza de hielo que cambia de expresión según su estado de ánimo. Puede crear ráfagas de frío extremo y vive en climas fríos.",
+    "description": "Eiscue es un Pokémon verdaderamente singular que ha cautivado a entrenadores de todo el mundo. Su rasgo más distintivo es su cabeza de hielo que cambia de expresión según su estado de ánimo, lo que lo convierte en un enigma viviente. Este misterioso habitante de climas fríos tiene la asombrosa habilidad de generar ráfagas de frío extremo que pueden helar instantáneamente cualquier entorno. Su resistencia al frío es insuperable, y es un verdadero campeón del tipo hielo. Los entrenadores que elijan a Eiscue se encuentran con un compañero fiel y, a la vez, un enigma por descubrir.",
     "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/f/f6/latest/20200307024653/Eiscue.png",
     "fact": {
       "mainField": "Hielo",
-      "habilities": "Refrigerador",
-      "weight": "89.00",
+      "pokemonHabilities": "Refrigerador",
+      "pokemonWeight": "89.00",
     }
   },
-
+  
   {
     "id": "mimikyu",
     "name": "Mimikyu",
     "shortDescription": "Pokémon tipo fantasma-hada",
-    "description": "Mimikyu es un Pokémon tímido y solitario que se esconde bajo un disfraz hecho a mano. Anhela la compañía de otros Pokémon y hará cualquier cosa para ganar su afecto.",
+    "description": "Mimikyu es un Pokémon tímido y solitario que se esconde bajo un disfraz hecho a mano. Anhela la compañía de otros Pokémon y hará cualquier cosa para ganar su afecto. Su disfraz, hecho de tela y cartón, esconde su verdadera forma, que es temida por su apariencia espeluznante. A pesar de sus intenciones amigables, su naturaleza asustadiza a menudo lo lleva a actuar de manera extraña para atraer la atención. Su corazón solitario y deseo de amistad hacen de Mimikyu un Pokémon único y conmovedor que cautiva a quienes lo conocen.",
     "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/41/latest/20160720213413/Mimikyu.png/800px-Mimikyu.png",
     "fact": {
       "mainField": "Fantasma",
-      "habilities": "Disfraz",
-      "weight": "0.70",
+      "pokemonHabilities": "Disfraz",
+      "pokemonWeight": "0.70",
     }
   },
-
+  
   {
     "id": "pumpkaboo",
     "name": "Pumpkaboo",
     "shortDescription": "Pokémon tipo fantasma-planta",
-    "description": "Pumpkaboo es un misterioso Pokémon con forma de calabaza. Se oculta en la oscuridad y asusta a los viajeros desprevenidos. Su cuerpo brilla en la noche.",
+    "description": "Pumpkaboo es un misterioso Pokémon con forma de calabaza. Se oculta en la oscuridad y asusta a los viajeros desprevenidos. Su cuerpo brilla en la noche. Su tamaño varía según la edad, y existen cuatro tamaños diferentes. Se dice que Pumpkaboo trae buena suerte a quienes lo encuentran en la noche de luna llena. Los viajeros nocturnos a menudo escuchan su risa misteriosa y ven su resplandor fantasmal en el campo, lo que añade al aura de misterio que lo rodea.",
     "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/4/4a/latest/20190425220828/Pumpkaboo.png",
     "fact": {
       "mainField": "Fantasma",
-      "habilities": "Sombra traviesa",
-      "weight": "5.00",
+      "pokemonHabilities": "Sombra traviesa",
+      "pokemonWeight": "5.00",
     }
   },
-
+  
   {
     "id": "misdreavus",
     "name": "Misdreavus",
     "shortDescription": "Pokémon tipo fantasma",
-    "description": "Misdreavus es un travieso Pokémon tipo fantasma que disfruta asustando a las personas con sus chillidos. Se cree que su gemido puede causar pesadillas.",
+    "description": "Misdreavus es un travieso Pokémon tipo fantasma que disfruta asustando a las personas con sus chillidos. Se cree que su gemido puede causar pesadillas. Su cuerpo flotante y su capacidad de emitir lamentos espectralmente inquietantes lo convierten en un ser digno de relatos de terror. Misdreavus se deleita en atormentar a los curiosos que se aventuran cerca de su hábitat. A pesar de su naturaleza traviesa, algunos entrenadores han logrado establecer vínculos fuertes con Misdreavus, aprovechando su astucia para batallas Pokémon. Este ser enigmático es un recordatorio de que incluso lo paranormal puede ser cautivador y fascinante.",
     "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/6/6c/latest/20230627210211/Misdreavus.png/800px-Misdreavus.png",
     "fact": {
       "mainField": "Fantasma",
-      "habilities": "Levitación",
-      "weight": "1.00",
+      "pokemonHabilities": "Levitación",
+      "pokemonWeight": "1.00",
     }
   },
+  
 
   {
     "id": "altaria",
     "name": "Altaria",
     "shortDescription": "Pokémon tipo dragón/volador",
-    "description": "Altaria es un Pokémon tipo dragón/volador conocido por su belleza y suavidad. Su cuerpo está cubierto de plumas blancas y esponjosas que le permiten volar por los cielos con gracia. A pesar de su aspecto apacible, Altaria puede ser un adversario formidable en batalla.",
+    "description": "Altaria es una criatura majestuosa de tipo dragón/volador. Sus esponjosas plumas blancas y su elegancia al volar lo convierten en un Pokémon deslumbrante. A pesar de su apariencia apacible, Altaria oculta una fuerza formidable. En batalla, puede sorprender a sus oponentes con movimientos veloces y poderosos, haciendo de él un adversario digno. Su canto melodioso se dice que puede purificar el alma de quienes lo escuchan. Los entrenadores que eligen a Altaria encuentran un aliado de gracia y poder en el mundo de los Pokémon.",
     "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/24/latest/20141102005820/Altaria.png/1200px-Altaria.png",
     "fact": {
       "mainField": "Dragón",
-      "habilities": "Velo sagrado",
-      "weight": "20.60",
+      "pokemonHabilities": "Velo sagrado",
+      "pokemonWeight": "20.60",
     }
   },
   
-
   {
     "id": "dratini",
     "name": "Dratini",
     "shortDescription": "Pokémon tipo dragón",
-    "description": "Dratini es un Pokémon serpenteante de tipo dragón. Su cuerpo es largo y elegante. Se dice que este Pokémon tiene una mirada hipnótica que atrae a otros.",
+    "description": "Dratini es una serpiente de tipo dragón con un cuerpo largo y elegante. Su mirada hipnótica ha cautivado a lo largo de los años a entrenadores y curiosos. Aunque su apariencia es pacífica, Dratini es un Pokémon que posee un gran potencial en batalla. A medida que evoluciona, se convierte en un poderoso Dragón que domina el campo de batalla con ataques feroces. Su elegancia y encanto lo convierten en un compañero preciado para los amantes de los Pokémon tipo dragón.",
     "imgUrl": "https://i.pinimg.com/originals/5c/e4/22/5ce4229fefe3825d12618d0e4aaf9852.png",
     "fact": {
       "mainField": "Dragón",
-      "habilities": "Cuerpo puro",
-      "weight": "3.30",
+      "pokemonHabilities": "Cuerpo puro",
+      "pokemonWeight": "3.30",
     }
   },
-
   
   {
     "id": "goodra",
     "name": "Goodra",
     "shortDescription": "Dragón",
-    "description": "Goodra es un Pokémon tipo dragón/babas conocido por su apariencia amigable y su capacidad para controlar babas pegajosas. A pesar de su aspecto, es un poderoso Pokémon que puede lanzar poderosos ataques de tipo dragón.",
+    "description": "Goodra es un Pokémon tipo dragón/babas conocido por su apariencia amigable y su capacidad para controlar babas pegajosas. A pesar de su aspecto, es un poderoso Pokémon que puede lanzar poderosos ataques de tipo dragón. Su amabilidad y carácter gentil hacen que sea un compañero querido por muchos entrenadores. En batalla, Goodra se convierte en una fuerza imparable que desata la furia de los dragones, sorprendiendo a sus oponentes con su agilidad y potencia. Si buscas un Pokémon que combine apariencia amigable con fuerza temible, Goodra es la elección perfecta.",
     "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/a/af/latest/20230317213336/Artwork_Goodra_UNITE.png",
     "fact": {
       "mainField": "Dragón",
-      "habilities": "Hidratación",
-      "weight": "150.00",
+      "pokemonHabilities": "Hidratación",
+      "pokemonWeight": "150.00",
     }
   },
-
+  
   
   {
     "id": "pikachu",
     "name": "Pikachu",
     "shortDescription": "Eléctrico",
-    "description": "Pikachu es uno de los Pokémon más icónicos y queridos. Su cola actúa como una antena y puede generar descargas eléctricas. Siempre lleva consigo una sonrisa en su rostro.",
+    "description": "Pikachu, uno de los Pokémon más icónicos y adorados, es conocido por su encantadora apariencia y su poder eléctrico. Su cola actúa como una antena y puede generar descargas eléctricas con facilidad. A pesar de su diminuto tamaño, su energía es contagiosa y su sonrisa siempre ilumina el día. Los entrenadores aprecian su naturaleza juguetona y lealtad inquebrantable. En batalla, Pikachu desata su energía eléctrica con movimientos impresionantes. Es un símbolo de amistad y determinación en el mundo de los Pokémon, y su popularidad perdura a lo largo de las generaciones.",
     "imgUrl": "https://i.pinimg.com/originals/5c/da/5d/5cda5d5de9f11ecf7c18a96307adc691.png",
     "fact": {
       "mainField": "Eléctrico",
-      "habilities": "Electricidad estática",
-      "weight": "6.00",
+      "pokemonHabilities": "Electricidad estática",
+      "pokemonWeight": "6.00",
     }
   },
-
+  
   {
     "id": "jolteon",
     "name": "Jolteon",
     "shortDescription": "Pokémon tipo eléctrico",
-    "description": "Jolteon es un Pokémon eléctrico conocido por su velocidad y sus puntiagudas púas cargadas de electricidad. Es capaz de generar rayos en cualquier momento.",
-    "imgUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/22a4cfd7-42eb-49ab-939a-0314c4777e33/dg4f7vu-7ee79d4a-0006-48c0-97cd-51c3416ce641.png/v1/fill/w_880,h_880/jolteon_png_by_pablozilla_rex91_dg4f7vu-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODgwIiwicGF0aCI6IlwvZlwvMjJhNGNmZDctNDJlYi00OWFiLTkzOWEtMDMxNGM0Nzc3ZTMzXC9kZzRmN3Z1LTdlZTc5ZDRhLTAwMDYtNDhjMC05N2NkLTUxYzM0MTZjZTY0MS5wbmciLCJ3aWR0aCI6Ijw9ODgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.5Bb0qUm9Yk6uUN0nnUog2iPCnHpm_y_kb0-wFYo0R4Y",
+    "description": "Jolteon es un Pokémon eléctrico conocido por su velocidad y sus puntiagudas púas cargadas de electricidad. Su aspecto afilado y elegante refleja su naturaleza rápida y letal en batalla. Jolteon puede generar rayos en cualquier momento y sorprender a sus oponentes con ataques eléctricos devastadores. Aunque su temperamento es tranquilo, su presencia impone respeto en el campo de batalla. Los entrenadores que eligen a Jolteon confían en su velocidad y poder para superar cualquier desafío.",
+    "imgUrl": "https://i.pinimg.com/originals/0e/d1/50/0ed1501cea329e5bc5c08eb4a54654b8.png",
     "fact": {
       "mainField": "Eléctrico",
-      "habilities": "Absorber voltaje",
-      "weight": "24.50",
+      "pokemonHabilities": "Absorber voltaje",
+      "pokemonWeight": "24.50",
     }
   },
-
+  
   {
     "id": "togedemaru",
     "name": "Togedemaru",
     "shortDescription": "Pokémon tipo eléctrico-acero",
-    "description": "Togedemaru es un pequeño Pokémon con un cuerpo cubierto de espinas que usa para defenderse. Su pelaje de acero lo protege de ataques eléctricos.",
+    "description": "Togedemaru es un pequeño Pokémon con un cuerpo cubierto de espinas que utiliza para defenderse de los depredadores. Su pelaje de acero lo protege de los ataques eléctricos, lo que lo convierte en un Pokémon resistente y astuto. Aunque su tamaño es diminuto, su valentía es impresionante. Togedemaru utiliza sus espinas para crear trampas ingeniosas y proteger su territorio. En batalla, despliega una combinación de defensa y ataque que desconcierta a sus oponentes. Los entrenadores que eligen a Togedemaru descubren un aliado de acero inquebrantable.",
     "imgUrl": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/8/8b/latest/20160920200604/Togedemaru.png/1200px-Togedemaru.png",
     "fact": {
       "mainField": "Eléctrico",
-      "habilities": "Espina trampa",
-      "weight": "3.30",
-    }
+      "pokemonHabilities": "Espina trampa",
+      "pokemonWeight": "3.30",
+    } 
   },
 ];
