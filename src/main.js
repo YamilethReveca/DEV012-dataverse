@@ -4,12 +4,12 @@ import data from './data/dataset.js';
 
 
 // accedemos al dom del elemento padre, la sección por su id
-let section= document.querySelector("#root");
+const section= document.querySelector("#root");
 section.appendChild(renderItems(data));
 
 //mostrar la estadistica
 const pokemonStats = computeStats(data);
-let mostarEstadistica= document.querySelector("#mostarEstadistica");
+const mostarEstadistica= document.querySelector("#mostarEstadistica");
 mostarEstadistica.appendChild(renderStats(pokemonStats));
 
 
@@ -20,13 +20,13 @@ const selectSort = document.querySelector('[data-testid="select-sort"]');
 
 //el evento addEventListener para el boton, limpia el filtro y rdenamiento 
 clearButton.addEventListener("click", function (event) {
-    event.preventDefault();// // Evita el comportamiento predeterminado del botón
-    selectFilter.selectedIndex = 0; // 
-    selectSort.selectedIndex = 0;     
-    section.innerHTML="";    
-    section.appendChild(renderItems(data));
-    mostarEstadistica.innerHTML="";
-    mostarEstadistica.appendChild(renderStats(pokemonStats));
+  event.preventDefault();// // Evita el comportamiento predeterminado del botón
+  selectFilter.selectedIndex = 0; // 
+  selectSort.selectedIndex = 0;     
+  section.innerHTML="";    
+  section.appendChild(renderItems(data));
+  mostarEstadistica.innerHTML="";
+  mostarEstadistica.appendChild(renderStats(pokemonStats));
 });
 
 // funcionamiento del filtro.
@@ -43,9 +43,9 @@ selectFilter.addEventListener("change", function (event) {
 
 //ordenamiento
 selectSort.addEventListener("change", function (event) {
-const selectedValue = event.target.value;
-const arraySort= selectedValue.split("-");
-const sortedData = sortData(filteredData, arraySort[0], arraySort[1]);  
+  const selectedValue = event.target.value;
+  const arraySort= selectedValue.split("-");
+  const sortedData = sortData(filteredData, arraySort[0], arraySort[1]);  
   section.innerHTML = "";
   section.appendChild(renderItems(sortedData));
 });

@@ -9,7 +9,7 @@ export default [
     "fact": {
       "mainField": "Fuego",
       "habilities": "Intimidación",
-      "weight": 155.00,
+      "weight": "155.00",
 
     }
   },
@@ -23,7 +23,7 @@ export default [
     "fact": {
       "mainField": "Fuego",
       "habilities": "Mar Llamas",
-      "weight": 8.50,
+      "weight": "8.50",
     }
   },
 
@@ -36,7 +36,7 @@ export default [
     "fact": {
       "mainField": "Fuego",
       "habilities": "Cuerpo Llama",
-      "weight": 21.40,
+      "weight": "21.40",
     }
   },
 
@@ -49,7 +49,7 @@ export default [
     "fact": {
       "mainField": "Agua",
       "habilities": "Torrente",
-      "weight": 9.00,
+      "weight": "9.00",
     }
   },
 
@@ -62,7 +62,7 @@ export default [
     "fact": {
       "mainField": "Agua",
       "habilities": "Absorbe Agua",
-      "weight": 29.00,
+      "weight": "29.00",
     }
   },
 
@@ -75,7 +75,7 @@ export default [
     "fact": {
       "mainField": "Agua",
       "habilities":"Especial Tenacidad",
-      "weight": 162.00,
+      "weight": "162.00",
    }
   },
 
@@ -88,7 +88,7 @@ export default [
     "fact": {
       "mainField": "Tierra",
       "habilities": "Velo Arena",
-      "weight": 29.50,
+      "weight": "29.50",
     }
   },
 
@@ -101,7 +101,7 @@ export default [
     "fact": {
       "mainField": "Tierra",
       "habilities": "Robustez",
-      "weight": 120.00,
+      "weight": "120.00",
     }
   },
 
@@ -115,7 +115,7 @@ export default [
     "fact": {
       "mainField": "Tierra",
       "habilities":"Chorro Arena",
-      "weight": 300.00,
+      "weight": "300.00",
     }
   },
 
@@ -129,7 +129,7 @@ export default [
     "fact": {
       "mainField": "Volador",
       "habilities": "Vista Lince",
-      "weight": 39.50,
+      "weight": "39.50",
     }
   },
 
@@ -143,7 +143,7 @@ export default [
     "fact": {
       "mainField": "Volador",
       "habilities": "Vista Lince",
-      "weight": 38.00,
+      "weight": "38.00",
     }
   },
 
@@ -156,7 +156,7 @@ export default [
     "fact": {
       "mainField": "Volador",
       "habilities": "Forma Avatar",
-      "weight": 63.00,
+      "weight": "63.00",
     }
   },
 
@@ -169,7 +169,7 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Pelea con estilo",
-      "weight": 8.50,
+      "weight": "8.50",
     }
   },
 
@@ -182,7 +182,7 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Cambio hoja",
-      "weight": 25.90,
+      "weight": "25.90",
     }
   },
 
@@ -195,7 +195,7 @@ export default [
     "fact": {
       "mainField": "Hielo",
       "habilities": "Refrigerador",
-      "weight": 89.00,
+      "weight": "89.00",
     }
   },
 
@@ -208,7 +208,7 @@ export default [
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Disfraz",
-      "weight": 0.70,
+      "weight": "0.70",
     }
   },
 
@@ -221,7 +221,7 @@ export default [
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Sombra traviesa",
-      "weight": 5.00,
+      "weight": "5.00",
     }
   },
 
@@ -234,7 +234,7 @@ export default [
     "fact": {
       "mainField": "Fantasma",
       "habilities": "Levitación",
-      "weight": 1.00,
+      "weight": "1.00",
     }
   },
 
@@ -247,7 +247,7 @@ export default [
     "fact": {
       "mainField": "Dragón",
       "habilities": "Velo sagrado",
-      "weight": 20.60,
+      "weight": "20.60",
     }
   },
   
@@ -261,7 +261,7 @@ export default [
     "fact": {
       "mainField": "Dragón",
       "habilities": "Cuerpo puro",
-      "weight": 3.30,
+      "weight": "3.30",
     }
   },
   
@@ -274,7 +274,7 @@ export default [
     "fact": {
       "mainField": "Dragón",
       "habilities": "Hidratación",
-      "weight": 150.00,
+      "weight": "150.00",
     }
   },
   
@@ -287,7 +287,7 @@ export default [
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Electricidad estática",
-      "weight": 6.00,
+      "weight": "6.00",
     }
   },
 
@@ -300,7 +300,7 @@ export default [
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Absorber voltaje",
-      "weight": 24.50,
+      "weight": "24.50",
     }
   },
 
@@ -313,7 +313,7 @@ export default [
     "fact": {
       "mainField": "Eléctrico",
       "habilities": "Espina trampa",
-      "weight": 3.30,
+      "weight": "3.30",
     }
   },
 ];
