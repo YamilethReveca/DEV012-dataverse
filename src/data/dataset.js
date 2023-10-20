@@ -284,8 +284,8 @@ export default [
     "name": "Pikachu",
     "shortDescription": "Eléctrico",
     "description": "Pikachu, uno de los Pokémon más icónicos y adorados, es conocido por su encantadora apariencia y su poder eléctrico. Su cola actúa como una antena y puede generar descargas eléctricas con facilidad. A pesar de su diminuto tamaño, su energía es contagiosa y su sonrisa siempre ilumina el día. Los entrenadores aprecian su naturaleza juguetona y lealtad inquebrantable. En batalla, Pikachu desata su energía eléctrica con movimientos impresionantes. Es un símbolo de amistad y determinación en el mundo de los Pokémon, y su popularidad perdura a lo largo de las generaciones.",
-    "imgUrl": "https://i.pinimg.com/originals/5c/da/5d/5cda5d5de9f11ecf7c18a96307adc691.png",
-    "fact": {
+    "imageUrl": "https://i.pinimg.com/originals/5c/da/5d/5cda5d5de9f11ecf7c18a96307adc691.png",
+    "facts": {
       "mainField": "Eléctrico",
       "pokemonHabilities": "Electricidad estática",
       "pokemonWeight": "6.00",
@@ -296,14 +296,15 @@ export default [
     "id": "jolteon",
     "name": "Jolteon",
     "shortDescription": "Pokémon tipo eléctrico",
-    "description": "Jolteon es un Pokémon eléctrico conocido por su velocidad y sus puntiagudas púas cargadas de electricidad. Su aspecto afilado y elegante refleja su naturaleza rápida y letal en batalla. Jolteon puede generar rayos en cualquier momento y sorprender a sus oponentes con ataques eléctricos devastadores. Aunque su temperamento es tranquilo, su presencia impone respeto en el campo de batalla. Los entrenadores que eligen a Jolteon confían en su velocidad y poder para superar cualquier desafío.",
+    "description": "Jolteon es un Pokémon eléctrico de gran renombre gracias a su velocidad y sus puntiagudas púas cargadas de electricidad. Su aspecto afilado y elegante refleja su naturaleza rápida y letal en el campo de batalla. Jolteon tiene la capacidad de generar rayos en cualquier momento, lo que le permite sorprender a sus oponentes con ataques eléctricos devastadores. A pesar de su temperamento generalmente tranquilo, su sola presencia impone respeto en la lucha. Los entrenadores que eligen a Jolteon confían en su velocidad y poder para superar desafíos y triunfar en cualquier competencia Pokémon.",
     "imgUrl": "https://i.pinimg.com/originals/0e/d1/50/0ed1501cea329e5bc5c08eb4a54654b8.png",
     "fact": {
       "mainField": "Eléctrico",
-      "pokemonHabilities": "Absorber voltaje",
-      "pokemonWeight": "24.50",
+      "habilities": "Absorber voltaje",
+      "weight": "24.50",
     }
   },
+  
   
   {
     "id": "togedemaru",
