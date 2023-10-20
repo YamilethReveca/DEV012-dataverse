@@ -139,13 +139,13 @@ const [
   exportStatements,
 ] = metrics;
 
-describe.skip('Tipos de datos primitivos', () => {
+describe('Tipos de datos primitivos', () => {
   it('Se convierten valores tipo "string" a tipo "number" con "parseInt" o "parseFloat" o "Number"', () => {
     expect(parseIntCalls.length + parseFloatCalls.length + NumberCalls.length).toBeGreaterThan(0);
   });
 });
 
-describe.skip('Arrays', () => {
+describe('Arrays', () => {
   it('Se usan métodos para manipular arrays como "sort"', () => {
     expect(sortCalls.length).toBeGreaterThan(0);
   });
@@ -163,19 +163,19 @@ describe.skip('Arrays', () => {
   });
 });
 
-describe.skip('Variables', () => {
+describe('Variables', () => {
   it('Se declaran variables con "const"', () => {
     expect(constStatements.length).toBeGreaterThan(0);
   });
 });
 
-describe.skip('Uso de condicionales', () => {
+describe('Uso de condicionales', () => {
   it('Se usa el statement "if...else"', () => {
     expect(ifelseStatements.length).toBeGreaterThan(0);
   });
 });
 
-describe.skip('Módulos de ECMAScript', () => {
+describe('Módulos de ECMAScript', () => {
   it('Se usa "export"', () => {
     expect(exportStatements.length).toBeGreaterThan(0);
   });

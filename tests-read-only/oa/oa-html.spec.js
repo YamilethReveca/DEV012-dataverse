@@ -20,7 +20,7 @@ const renderDOM = (data) => {
   }
 }
 
-describe.skip('Uso de HTML semántico', () => {
+describe('Uso de HTML semántico', () => {
   
   beforeEach(() => {
     renderDOM(fakeData);
