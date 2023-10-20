@@ -14,18 +14,18 @@ export const renderItems = (data) => {
     li.setAttributeNode(itemtype);
   
     li.innerHTML= "";  // inicializamos el li vacio.
-    let content =`<dl><img class="imgTarjeta" src="${pokemon.imgUrl}" alt="${pokemon.id}">
+    let content =`<dl><img class="imgTarjeta" src="${pokemon.imageUrl}" alt="${pokemon.id}">
 <dt><strong>Nombre:</dt><dd itemprop="name">${pokemon.name}</strong></dd>
 <dt><strong>Corta descripción:</strong></dt><dd itemprop="shortDescription">${pokemon.shortDescription}</dd>
 <dt><strong>Descripción:</strong></dt><dd class="estilo" itemprop="description">${pokemon.description}</dd>`;
 
 
 
-    const fact = pokemon.fact;
-    if (fact) {
-      content += `<dt><strong>Campo principal:</strong></dt><dd itemprop="mainField">${fact.mainField}</dd>
-  <dt><strong>Habilidades:</strong></dt><dd itemprop="habilities">${fact.habilities}</dd>
-  <dt><strong>Peso:</strong></dt><dd itemprop="weight">${fact.weight} Kg</dd></dl>`;
+    const facts = pokemon.facts;
+    if (facts) {
+      content += `<dt><strong>Campo principal:</strong></dt><dd itemprop="mainField">${facts.mainField}</dd>
+  <dt><strong>Habilidades:</strong></dt><dd itemprop="pokemonHabilities">${facts.pokemonHabilities}</dd>
+  <dt><strong>Peso:</strong></dt><dd itemprop="pokemonWeight">${facts.pokemonWeight} Kg</dd></dl>`;
     }
 
     li.innerHTML=content;

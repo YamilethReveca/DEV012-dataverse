@@ -28,19 +28,19 @@ main{
 
 select{  
   display: inline;
-	width: 100%;
-	cursor: pointer;
+  width: 100%;
+  cursor: pointer;
   padding: 7px 10px;
   height: 42px;
   outline: 0; 
   border: 0;
-	border-radius: 0;
-	background: #f0f0f0;
-	color: #7b7b7b;
-	font-size: 1em;
-	color: #999;
-	font-family:'Quicksand', sans-serif;
-	border:2px solid rgba(0,0,0,0.2);
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: #999;
+  font-family:'Quicksand', sans-serif;
+  border:2px solid rgba(0,0,0,0.2);
   border-radius: 12px;
   position: relative;
   transition: all 0.25s ease;
@@ -123,26 +123,26 @@ h2{
   width: 100%;
   text-align: center; /* Centra los elementos en el contenedor horizontalmente */
 }
-ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-  width: 100%;
-  padding: 0;
-}
 
-li {
+li{
   display: inline-block;
+  list-style: none;
   border: 2px solid rgb(88, 88, 243);
   background-image: linear-gradient(to bottom, #FFB6C1, #a4a4d8);
   padding: 10px;
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
+  font-family:'Quicksand', sans-serif;   
   text-align: center;
   margin: 10px 0;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
+}
+
+ul{
+  text-align: center;
+  width: 100%;
+  padding: 0;
 }
 
 
