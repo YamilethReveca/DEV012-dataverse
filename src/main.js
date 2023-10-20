@@ -50,7 +50,3 @@ selectSort.addEventListener("change", function (event) {
   section.appendChild(renderItems(sortedData));
 });
 
-// eventos listener 
-//querySelector y document.getElementById si es necesario.
-//click para el boton
-//change para el select .
