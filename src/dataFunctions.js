@@ -5,7 +5,7 @@ export const filterData=(data, filterBy, value)=>{
 
   switch (filterBy) {
   case "mainField":
-    return data.filter((pokemon) => pokemon.fact["mainField"] === value);
+    return data.filter((pokemon) => pokemon.facts["mainField"] === value);
 
   default:
     return data;
@@ -29,18 +29,18 @@ export const sortData = (data, sortBy, sortOrder) => {
   case "habilities":
     sortedData.sort((a, b) => {
       if (sortOrder === "asc") {
-        return a.fact.habilities.localeCompare(b.fact.habilities);
+        return a.facts.pokemonHabilities.localeCompare(b.facts.pokemonHabilities);
       } else if (sortOrder === "desc") {
-        return b.fact.habilities.localeCompare(a.fact.habilities);
+        return b.facts.pokemonHabilities.localeCompare(a.facts.pokemonHabilities);
       }
     });
     break;
   case "weight":
     sortedData.sort((a, b) => {
       if (sortOrder === "asc") {
-        return (a.fact.weight) - (b.fact.weight);
+        return (a.facts.pokemonWeight) - (b.facts.pokemonWeight);
       } else if (sortOrder === "desc") {
-        return (b.fact.weight) - (a.fact.weight);
+        return (b.facts.pokemonWeight) - (a.facts.pokemonWeight);
       }
     });
     break;
@@ -53,10 +53,10 @@ export const sortData = (data, sortBy, sortOrder) => {
 }
 // estadistica
 export const computeStats = (data, decimalPlaces = 2) => {
-  const totalWeight = (data.reduce((sum, pokemon) => sum + parseFloat(pokemon.fact.weight), 0)).toFixed(decimalPlaces); 
+  const totalWeight = (data.reduce((sum, pokemon) => sum + parseFloat(pokemon.facts.pokemonWeight), 0)).toFixed(decimalPlaces); 
   const averageWeight = (totalWeight / data.length).toFixed(decimalPlaces); 
-  const maxWeight = Math.max(...data.map(pokemon => parseFloat(pokemon.fact.weight))).toFixed(decimalPlaces); 
-  const minWeight = Math.min(...data.map(pokemon => parseFloat(pokemon.fact.weight))).toFixed(decimalPlaces); 
+  const maxWeight = Math.max(...data.map(pokemon => parseFloat(pokemon.facts.pokemonWeight))).toFixed(decimalPlaces); 
+  const minWeight = Math.min(...data.map(pokemon => parseFloat(pokemon.facts.pokemonWeight))).toFixed(decimalPlaces); 
 
   return {
     totalWeight, 

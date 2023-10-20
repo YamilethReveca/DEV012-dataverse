@@ -145,6 +145,7 @@ ul{
   padding: 0;
 }
 
+
 #root {
   display: flex;
   flex-direction: column; /* Cambia la dirección del flexbox a vertical para dispositivos móviles */

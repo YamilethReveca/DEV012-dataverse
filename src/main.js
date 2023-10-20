@@ -42,7 +42,7 @@ selectFilter.addEventListener("change", function (event) {
 });
 
 //ordenamiento
-selectSort.addEventListener("change", function (event) {
+selectSort.addEventListener("change", function (event){
   const selectedValue = event.target.value;
   const arraySort= selectedValue.split("-");
   const sortedData = sortData(filteredData, arraySort[0], arraySort[1]);  

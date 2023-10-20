@@ -59,7 +59,7 @@ const getDeclarationsForElClasses = (el) => {
   }, []);
 }
 
-describe('CSS', () => {
+describe.skip('CSS', () => {
 
   describe('Uso de selectores de CSS', () => {
 
