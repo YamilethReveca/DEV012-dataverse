@@ -300,8 +300,8 @@ export default [
     "imageUrl": "https://i.pinimg.com/originals/0e/d1/50/0ed1501cea329e5bc5c08eb4a54654b8.png",
     "facts": {
       "mainField": "Eléctrico",
-      "habilities": "Absorber voltaje",
-      "weight": "24.50",
+      "pokemonHabilities": "Absorber voltaje",
+      "pokemonWeight": "24.50",
     }
   },
   
