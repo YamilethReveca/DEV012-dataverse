@@ -23,14 +23,15 @@ clearButton.addEventListener("click", function (event) {
   event.preventDefault();// // Evita el comportamiento predeterminado del botón
   selectFilter.selectedIndex = 0; // 
   selectSort.selectedIndex = 0;     
-  section.innerHTML="";    
+  section.innerHTML="";
+  filteredData=data;    
   section.appendChild(renderItems(data));
   mostarEstadistica.innerHTML="";
   mostarEstadistica.appendChild(renderStats(pokemonStats));
 });
 
 // funcionamiento del filtro.
-let filteredData; 
+let filteredData= data; 
 selectFilter.addEventListener("change", function (event) {
   const selectedValue = event.target.value;
   filteredData = filterData(data, "mainField", selectedValue);

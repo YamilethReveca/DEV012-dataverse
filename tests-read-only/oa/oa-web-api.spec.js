@@ -98,7 +98,7 @@ const [
   templateCalls
 ] = metrics;
 
-describe.skip('Uso de selectores del DOM', () => {
+describe('Uso de selectores del DOM', () => {
 
   it('Se usa el selector del DOM querySelector', () => {
     expect(querySelectorCalls.length).toBeGreaterThan(0);
@@ -110,7 +110,7 @@ describe.skip('Uso de selectores del DOM', () => {
 
 });
 
-describe.skip('Manejo de eventos del DOM', () => {
+describe('Manejo de eventos del DOM', () => {
 
   it('Se registra un Event Listener para el evento "change"', () => {
     expect(
@@ -140,7 +140,7 @@ describe.skip('Manejo de eventos del DOM', () => {
   });
 });
 
-describe.skip('Manipulación dinámica del DOM', () => {
+describe('Manipulación dinámica del DOM', () => {
 
   it('Se actualiza el DOM al modificar el atributo "innerHTML" o "textContent"', () => {
     expect(textContents.length + innerHTMLs.length).toBeGreaterThan(0);
@@ -152,7 +152,7 @@ describe.skip('Manipulación dinámica del DOM', () => {
 
 });
 
-describe.skip('Módulos de ECMAScript', () => {
+describe('Módulos de ECMAScript', () => {
 
   it('Se usa "import"', () => {
     expect(importStatements.length).toBeGreaterThan(0);

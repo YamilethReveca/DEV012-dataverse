@@ -26,7 +26,7 @@ export const sortData = (data, sortBy, sortOrder) => {
       }
     });
     break;
-  case "habilities":
+  case "pokemonHabilities":
     sortedData.sort((a, b) => {
       if (sortOrder === "asc") {
         return a.facts.pokemonHabilities.localeCompare(b.facts.pokemonHabilities);
@@ -35,7 +35,7 @@ export const sortData = (data, sortBy, sortOrder) => {
       }
     });
     break;
-  case "weight":
+  case "pokemonWeight":
     sortedData.sort((a, b) => {
       if (sortOrder === "asc") {
         return (a.facts.pokemonWeight) - (b.facts.pokemonWeight);
