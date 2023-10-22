@@ -1,18 +1,59 @@
-import { example, anotherExample } from '../src/dataFunctions.js';
-import { data as fakeData } from './data.js';
+import { filterData, sortData, computeStats } from '../src/dataFunctions.js';
 
-console.log(fakeData);
+describe('Pruebas para dataFunctions.js', () => {
+  const testData = [
+    {
+      name: 'Cubchoo',
+      facts: { mainField: 'Hielo', pokemonWeight: 8.50 },
+    },
+    {
+      name: 'Glaceon',
+      facts: { mainField: 'Hielo', pokemonWeight: 25.90 },
+    },
+    {
+      name: 'Eiscue',
+      facts: { mainField: 'Hielo', pokemonWeight: 89.00 },
+    },
+  ];
 
-describe('example', () => {
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('filterData debería filtrar por mainField', () => {
+    const filteredData = filterData(testData, 'mainField', 'Hielo');
+    expect(filteredData).toEqual([
+      {
+        name: 'Cubchoo',
+        facts: { mainField: 'Hielo', pokemonWeight: 8.50 },
+      },
+      {
+        name: 'Glaceon',
+        facts: { mainField: 'Hielo', pokemonWeight: 25.90 },
+      },
+      {
+        name: 'Eiscue',
+        facts: { mainField: 'Hielo', pokemonWeight: 89.00 },
+      },
+    ]);
   });
-});
 
-describe('anotherExample', () => {
+  it('filterData debería devolver un arreglo vacío si no se encuentra coincidencia', () => {
+    const filteredData = filterData(testData, 'mainField', 'Fuego');
+    expect(filteredData).toEqual([]);
+  });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('sortData debería ordenar de manera ascendente por pokemonWeight', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'asc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Cubchoo', 'Glaceon', 'Eiscue']);
+  });
+
+  it('sortData debería ordenar de manera descendente por pokemonWeight', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'desc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Eiscue', 'Glaceon', 'Cubchoo']);
+  });
+
+  it('computeStats debería calcular estadísticas de peso', () => {
+    const stats = computeStats(testData);
+    expect(stats.totalWeight).toBe('123.40');
+    expect(stats.averageWeight).toBe('41.13');
+    expect(stats.maxWeight).toBe('89.00');
+    expect(stats.minWeight).toBe('8.50');
   });
 });
