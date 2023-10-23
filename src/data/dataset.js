@@ -305,6 +305,7 @@ export default [
     }
   },
   
+  
   {
     "id": "togedemaru",
     "name": "Togedemaru",

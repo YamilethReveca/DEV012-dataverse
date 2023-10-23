@@ -1,4 +1,4 @@
-import { filterData, sortData , computeStats} from '../src/dataFunctions.js';
+import { filterData, sortData, computeStats } from '../src/dataFunctions.js';
 import { data } from './data.js';
 
 const TEXT_POKEMON_FUEGO=[{
@@ -156,41 +156,34 @@ const TEXT_POKEMON_VOLADOR=[{
   }
 }];
 // pruebas de filtrado 
-describe(' Prueba de filtro de Pokemon tipo Fuego', () => {
-  const filterFuego = filterData(data, "mainField" , "Fuego" );
-  it('Filtrar pokemon Fuego por tipo Fuego', () => {
-    
+describe(' Prueba de filtro de Pokemon tipo', () => {
+  
+  it('Filtrar pokémon por tipo Fuego', () => {
+    const filterFuego = filterData(data, "mainField" , "Fuego" );
     expect(TEXT_POKEMON_FUEGO).toStrictEqual(filterFuego);
   });
-});
 
-describe(' Prueba de filtro de Pokemon tipo Agua', () => {
-
-  it('Filtrar pokemon Fuego por tipo Agua', () => {
+  it('Filtrar pokemon por tipo Agua', () => {
     const filterAgua= filterData(data, "mainField", "Agua")
     expect(TEXT_POKEMON_AGUA).toStrictEqual(filterAgua);    
   });
-});
 
-describe(' Prueba de filtro de Pokemon tipo Tierra', () => {
 
-  it('Filtrar pokemon Fuego por tipo Tierra', () => {
+  it('Filtrar pokemon por tipo Tierra', () => {
     const filterTierra= filterData(data, "mainField", "Tierra");
     expect(TEXT_POKEMON_TIERRA).toStrictEqual(filterTierra);    
   });
-});
 
-describe(' Prueba de filtro de Pokemon tipo Volador', () => {
 
-  it('Filtrar pokemon Fuego por tipo Viento', () => {
+  it('Filtrar pokemon por tipo Volador', () => {
     const filterVolador= filterData(data, "mainField", "Volador")
     expect(TEXT_POKEMON_VOLADOR).toStrictEqual(filterVolador);    
   });
-}); 
+});
 
 //ordenamiento fuego
 
-describe(' Prueba de ordenamiento de Pokemon de Fuego por name', () => {
+describe(' Ordenamiento por pókemon Fuego', () => {
 
   const testData = [
     { name: 'Arcanine', facts: { pokemonHabilities: 'Intimidación', pokemonWeight:'155.00'} },
@@ -198,65 +191,56 @@ describe(' Prueba de ordenamiento de Pokemon de Fuego por name', () => {
     { name: 'Magby', facts: { pokemonHabilities: 'Cuerpo llama', pokemonWeight: '21.40'} },
   ];
 
-
-  describe(' Prueba de ordenamiento de name ascendente de Pokemon de Fuego', () => {
-    it('Ordenar por nombre ascendente Pokemon Fuego', () => {
-      const sortedData = sortData(testData, 'name', 'asc');
-      const expectedOrder = ['Arcanine', 'Charmander', 'Magby'];
-      const actualOrder = sortedData.map(item => item.name);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  it('Ordenar por nombre ascendente', () => {
+    const sortedData = sortData(testData, 'name', 'asc');
+    const expectedOrder = ['Arcanine', 'Charmander', 'Magby'];
+    const actualOrder = sortedData.map(item => item.name);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento de name descendente de Pokemon de Fuego', () => {
-    it('Ordenar por nombre descendente Pokemon Fuego', () => {
-      const sortedData = sortData(testData, 'name', 'desc');
-      const expectedOrder = ['Magby', 'Charmander', 'Arcanine'];
-      const actualOrder = sortedData.map(item => item.name);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  it('Ordenar por nombre descendente', () => {
+    const sortedData = sortData(testData, 'name', 'desc');
+    const expectedOrder = ['Magby', 'Charmander', 'Arcanine'];
+    const actualOrder = sortedData.map(item => item.name);
+    expect(actualOrder).toStrictEqual(expectedOrder);
+  });
+ 
+  it('ordenar por habilidad ascendente ', () => {
+    const sortedData = sortData(testData, 'pokemonHabilities', 'asc');
+    const expectedOrder = ['Cuerpo llama', 'Intimidación', 'Mar llamas'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento por habilidades ascendente de Pokemon de Fuego', () => {
-    it('ordenar por habilidad ascendente pokemon Fuego', () => {
-      const sortedData = sortData(testData, 'pokemonHabilities', 'asc');
-      const expectedOrder = ['Cuerpo llama', 'Intimidación', 'Mar llamas'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+
+  it('ordenar por habilidad descendente ', () => {
+    const sortedData = sortData(testData, 'pokemonHabilities', 'desc');
+    const expectedOrder = ['Mar llamas','Intimidación','Cuerpo llama'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento por habilidades descendente de Pokemon de Fuego', () => {
-    it('ordenar por habilidad descendente pokemon Fuego', () => {
-      const sortedData = sortData(testData, 'pokemonHabilities', 'desc');
-      const expectedOrder = ['Mar llamas','Intimidación','Cuerpo llama'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+
+  it('Ordenar por peso pokemon Fuego ascendente', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'asc');
+    const expectedOrder = ['8.50', '21.40', '155.00'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
+    expect(actualOrder).toEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento por peso ascendente de Pokemon de Fuego', () => {
-    it('Ordenar por peso pokemon Fuego ascendente', () => {
-      const sortedData = sortData(testData, 'pokemonWeight', 'asc');
-      const expectedOrder = ['8.50', '21.40', '155.00'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
-      expect(actualOrder).toEqual(expectedOrder);
-    });
+  
+  it('Ordenar por peso pokemon Fuego descendente', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'desc');
+    const expectedOrder = ['155.00', '21.40', '8.50'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
+    expect(actualOrder).toEqual(expectedOrder);
   });
-
-  describe(' Prueba de ordenamiento por peso descendente de Pokemon de Fuego', () => {
-    it('Ordenar por peso pokemon Fuego descendente', () => {
-      const sortedData = sortData(testData, 'pokemonWeight', 'desc');
-      const expectedOrder = ['155.00', '21.40', '8.50'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
-      expect(actualOrder).toEqual(expectedOrder);
-    });
-  });
-
 });
 
+
+
 //ordenamiento agua 
-describe(' Prueba de ordenamiento de Pokemon de agua por name', () => {
+describe(' Ordenamiento de Pokémon de agua ', () => {
 
   const testData = [
     { name: 'Squirtle', facts: { pokemonHabilities: 'Torrente', pokemonWeight: '9.00' } },
@@ -264,63 +248,56 @@ describe(' Prueba de ordenamiento de Pokemon de agua por name', () => {
     { name: 'Milotic', facts: { pokemonHabilities: 'Especial tenacidad', pokemonWeight: '162.00'} },
   ];
 
-  describe(' Prueba de ordenamiento por name ascendente de Pokemon de agua' , () => {
-    it('Ordenar por nombre ascendente Pokemon Agua', () => {
-      const sortedData = sortData(testData, 'name', 'asc');
-      const expectedOrder = ['Milotic', 'Squirtle', 'Vaporeon'];
-      const actualOrder = sortedData.map(item => item.name);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  
+  it('Ordenar por nombre ascendente ', () => {
+    const sortedData = sortData(testData, 'name', 'asc');
+    const expectedOrder = ['Milotic', 'Squirtle', 'Vaporeon'];
+    const actualOrder = sortedData.map(item => item.name);
+    expect(actualOrder).toStrictEqual(expectedOrder);
+  });
+  
+  it('Ordenar por nombre descendente', () => {
+    const sortedData = sortData(testData, 'name', 'desc');
+    const expectedOrder = ['Vaporeon', 'Squirtle', 'Milotic'];
+    const actualOrder = sortedData.map(item => item.name);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento por name descendente de Pokemon de agua' , () => {
-    it('Ordenar por nombre descendente Pokemon Agua', () => {
-      const sortedData = sortData(testData, 'name', 'desc');
-      const expectedOrder = ['Vaporeon', 'Squirtle', 'Milotic'];
-      const actualOrder = sortedData.map(item => item.name);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+
+  it('ordenar por habilidad ascendente ', () => {
+    const sortedData = sortData(testData, 'pokemonHabilities', 'asc');
+    const expectedOrder = ['Asorbe agua', 'Especial tenacidad', 'Torrente'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento por habilidad ascendente de Pokemon de agua' , () => {
-    it('ordenar por habilidad ascendente pokemon Agua', () => {
-      const sortedData = sortData(testData, 'pokemonHabilities', 'asc');
-      const expectedOrder = ['Asorbe agua', 'Especial tenacidad', 'Torrente'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  it('ordenar por habilidad descendente ', () => {
+    const sortedData = sortData(testData, 'pokemonHabilities', 'desc');
+    const expectedOrder = ['Torrente','Especial tenacidad','Asorbe agua'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
+ 
 
-  describe(' Prueba de ordenamiento por habilidad descendente de Pokemon de agua' , () => {
-    it('ordenar por habilidad descendente pokemon Agua', () => {
-      const sortedData = sortData(testData, 'pokemonHabilities', 'desc');
-      const expectedOrder = ['Torrente','Especial tenacidad','Asorbe agua'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  it('Ordenar por peso ascendente ', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'asc');
+    const expectedOrder = ['9.00', '29.00', '162.00'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
+    expect(actualOrder).toEqual(expectedOrder);
   });
-
-  describe(' Prueba de ordenamiento por peso ascendente de Pokemon de agua' , () => {
-    it('Ordenar por peso ascendente pokemon Agua', () => {
-      const sortedData = sortData(testData, 'pokemonWeight', 'asc');
-      const expectedOrder = ['9.00', '29.00', '162.00'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
-      expect(actualOrder).toEqual(expectedOrder);
-    });
-  });
-
-  describe(' Prueba de ordenamiento por peso descendente de Pokemon de agua' , () => {
-    it('Ordenar por peso descendente pokemon Agua ', () => {
-      const sortedData = sortData(testData, 'pokemonWeight', 'desc');
-      const expectedOrder = ['162.00', '29.00', '9.00'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
-      expect(actualOrder).toEqual(expectedOrder);
-    });
+  
+  
+  it('Ordenar por peso descendente pokemon Agua ', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'desc');
+    const expectedOrder = ['162.00', '29.00', '9.00'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
+    expect(actualOrder).toEqual(expectedOrder);
   });
 });
 
+
 //  ordenamiento tierra 
-describe(' Prueba de ordenamiento de Pokemon de Tierra por name', () => {
+describe(' Ordenamiento de Pokémon de Tierra' , () => {
 
   const testData = [
     { name: 'Sandslash', facts: { pokemonHabilities: 'Velo arena', pokemonWeight: '29.50' } },
@@ -328,65 +305,58 @@ describe(' Prueba de ordenamiento de Pokemon de Tierra por name', () => {
     { name: 'Hippowdon', facts: { pokemonHabilities: 'Chorro arena', pokemonWeight: '300.00'} },
   ];
 
-  describe(' Prueba de ordenamiento de Pokemon por name ascendente de Tierra', () => {
-    it('Ordenar por nombre ascendente Pokemon Tierra', () => {
-      const sortedData = sortData(testData, 'name', 'asc');
-      const expectedOrder = ['Donphan', 'Hippowdon', 'Sandslash'];
-      const actualOrder = sortedData.map(item => item.name);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+
+  it('Ordenar por nombre ascendente', () => {
+    const sortedData = sortData(testData, 'name', 'asc');
+    const expectedOrder = ['Donphan', 'Hippowdon', 'Sandslash'];
+    const actualOrder = sortedData.map(item => item.name);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento de Pokemon por name descendente de Tierra', () => {
-    it('Ordenar por nombre descendente Pokemon Tierra', () => {
-      const sortedData = sortData(testData, 'name', 'desc');
-      const expectedOrder = ['Sandslash', 'Hippowdon', 'Donphan'];
-      const actualOrder = sortedData.map(item => item.name);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  it('Ordenar por nombre descendente', () => {
+    const sortedData = sortData(testData, 'name', 'desc');
+    const expectedOrder = ['Sandslash', 'Hippowdon', 'Donphan'];
+    const actualOrder = sortedData.map(item => item.name);
+    expect(actualOrder).toStrictEqual(expectedOrder);
+  });
+  
+  
+  it('Ordenar por habilidad ascendente', () => {
+    const sortedData = sortData(testData, 'pokemonHabilities', 'asc');
+    const expectedOrder = ['Chorro arena', 'Robustez', 'Velo arena'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
+    expect(actualOrder).toStrictEqual(expectedOrder);
+  });
+  
+
+  it('Ordenar por habilidad descendente', () => {
+    const sortedData = sortData(testData, 'pokemonHabilities', 'desc');
+    const expectedOrder = ['Velo arena','Robustez','Chorro arena'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
+    expect(actualOrder).toStrictEqual(expectedOrder);
+  });
+  
+  it('Ordenar por peso ascendente  ', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'asc');
+    const expectedOrder = ['29.50', '120.00', '300.00'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
+    expect(actualOrder).toEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento de Pokemon por habilidades ascendente de Tierra', () => {
-    it('ordenar por habilidad ascendente pokemon Tierra', () => {
-      const sortedData = sortData(testData, 'pokemonHabilities', 'asc');
-      const expectedOrder = ['Chorro arena', 'Robustez', 'Velo arena'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
-  });
 
-  describe(' Prueba de ordenamiento de Pokemon por habilidades descendente de Tierra', () => {
-    it('ordenar por habilidad descendente pokemon Tierra', () => {
-      const sortedData = sortData(testData, 'pokemonHabilities', 'desc');
-      const expectedOrder = ['Velo arena','Robustez','Chorro arena'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
-  });
-
-  describe(' Prueba de ordenamiento de Pokemon por peso ascendente de Tierra', () => {
-    it('Ordenar por peso ascendente pokemon Tierra ', () => {
-      const sortedData = sortData(testData, 'pokemonWeight', 'asc');
-      const expectedOrder = ['29.50', '120.00', '300.00'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
-      expect(actualOrder).toEqual(expectedOrder);
-    });
-  });
-
-  describe(' Prueba de ordenamiento de Pokemon por peso descendente de Tierra', () => {
-    it('Ordenar por peso descendente pokemon Tierra ', () => {
-      const sortedData = sortData(testData, 'pokemonWeight', 'desc');
-      const expectedOrder = ['300.00', '120.00', '29.50'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
-      expect(actualOrder).toEqual(expectedOrder);
-    });
+  it('Ordenar por peso descendente ', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'desc');
+    const expectedOrder = ['300.00', '120.00', '29.50'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
+    expect(actualOrder).toEqual(expectedOrder);
   });
 });
 
 
+
 //ordenamiento volador
 
-describe(' Prueba de ordenamiento de Pokemon de Volador por name', () => {
+describe(' Ordenamiento de Pokemon de Volador ', () => {
 
   const testData = [
     { name: 'Pidgeot', facts: { pokemonHabilities: 'Vista Lince', pokemonWeight:'39.500'} },
@@ -395,61 +365,54 @@ describe(' Prueba de ordenamiento de Pokemon de Volador por name', () => {
   ];
 
 
-  describe(' Prueba de ordenamiento de name ascendente de Pokemon de Volador', () => {
-    it('Ordenar por nombre ascendente Pokemon Fuego', () => {
-      const sortedData = sortData(testData, 'name', 'asc');
-      const expectedOrder = ['Fearow', 'Pidgeot', 'Tornadus'];
-      const actualOrder = sortedData.map(item => item.name);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  it('Ordenar por nombre ascendente', () => {
+    const sortedData = sortData(testData, 'name', 'asc');
+    const expectedOrder = ['Fearow', 'Pidgeot', 'Tornadus'];
+    const actualOrder = sortedData.map(item => item.name);
+    expect(actualOrder).toStrictEqual(expectedOrder);
+  });
+  
+
+  it('Ordenar por nombre descendente', () => {
+    const sortedData = sortData(testData, 'name', 'desc');
+    const expectedOrder = ['Tornadus', 'Pidgeot', 'Fearow'];
+    const actualOrder = sortedData.map(item => item.name);
+    expect(actualOrder).toStrictEqual(expectedOrder);
+  });
+  
+
+  it('ordenar por habilidad ascendente', () => {
+    const sortedData = sortData(testData, 'pokemonHabilities', 'asc');
+    const expectedOrder = ['Forma avatar', 'Vista Lince', 'Vista Lince'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
 
-  describe(' Prueba de ordenamiento de name descendente de Pokemon de Volador', () => {
-    it('Ordenar por nombre descendente Pokemon Fuego', () => {
-      const sortedData = sortData(testData, 'name', 'desc');
-      const expectedOrder = ['Tornadus', 'Pidgeot', 'Fearow'];
-      const actualOrder = sortedData.map(item => item.name);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
-  });
 
-  describe(' Prueba de ordenamiento por habilidades ascendente de Pokemon de Volador', () => {
-    it('ordenar por habilidad ascendente pokemon Fuego', () => {
-      const sortedData = sortData(testData, 'pokemonHabilities', 'asc');
-      const expectedOrder = ['Forma avatar', 'Vista Lince', 'Vista Lince'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  it('ordenar por habilidad descendente', () => {
+    const sortedData = sortData(testData, 'pokemonHabilities', 'desc');
+    const expectedOrder = ['Vista Lince','Vista Lince','Forma avatar'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
+    expect(actualOrder).toStrictEqual(expectedOrder);
   });
-
-  describe(' Prueba de ordenamiento por habilidades descendente de Pokemon de Volador', () => {
-    it('ordenar por habilidad descendente pokemon Fuego', () => {
-      const sortedData = sortData(testData, 'pokemonHabilities', 'desc');
-      const expectedOrder = ['Vista Lince','Vista Lince','Forma avatar'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonHabilities);
-      expect(actualOrder).toStrictEqual(expectedOrder);
-    });
+  
+  it('Ordenar por peso ascendente', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'asc');
+    const expectedOrder = ['38.00', '39.500', '63.00'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
+    expect(actualOrder).toEqual(expectedOrder);
   });
-
-  describe(' Prueba de ordenamiento por peso ascendente de Pokemon de Volador', () => {
-    it('Ordenar por peso pokemon Fuego ascendente', () => {
-      const sortedData = sortData(testData, 'pokemonWeight', 'asc');
-      const expectedOrder = ['38.00', '39.500', '63.00'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
-      expect(actualOrder).toEqual(expectedOrder);
-    });
+  
+  
+  it('Ordenar por peso descendente', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'desc');
+    const expectedOrder = ['63.00', '39.500', '38.00'];
+    const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
+    expect(actualOrder).toEqual(expectedOrder);
   });
-
-  describe(' Prueba de ordenamiento por peso descendente de Pokemon de Volador', () => {
-    it('Ordenar por peso pokemon Fuego descendente', () => {
-      const sortedData = sortData(testData, 'pokemonWeight', 'desc');
-      const expectedOrder = ['63.00', '39.500', '38.00'];
-      const actualOrder = sortedData.map(item => item.facts.pokemonWeight);
-      expect(actualOrder).toEqual(expectedOrder);
-    });
-  });
-
 });
+
+
 
 //estadistica pokemon fuego
 
@@ -573,5 +536,71 @@ describe('Estadistica de pokemon Volador', () => {
     expect(stats.maxWeight).toBe("63.00");
   });
 });
+
+
+
+// filtro pokemones de hilda
+
+describe('Pruebas para dataFunctions.js', () => {
+  const testData = [
+    {
+      name: 'Cubchoo',
+      facts: { mainField: 'Hielo', pokemonWeight: 8.50 },
+    },
+    {
+      name: 'Glaceon',
+      facts: { mainField: 'Hielo', pokemonWeight: 25.90 },
+    },
+    {
+      name: 'Eiscue',
+      facts: { mainField: 'Hielo', pokemonWeight: 89.00 },
+    },
+  ];
+
+  it('filterData debería filtrar por mainField', () => {
+    const filteredData = filterData(testData, 'mainField', 'Hielo');
+    expect(filteredData).toEqual([
+      {
+        name: 'Cubchoo',
+        facts: { mainField: 'Hielo', pokemonWeight: 8.50 },
+      },
+      {
+        name: 'Glaceon',
+        facts: { mainField: 'Hielo', pokemonWeight: 25.90 },
+      },
+      {
+        name: 'Eiscue',
+        facts: { mainField: 'Hielo', pokemonWeight: 89.00 },
+      },
+    ]);
+  });
+
+  it('filterData debería devolver un arreglo vacío si no se encuentra coincidencia', () => {
+    const filteredData = filterData(testData, 'mainField', 'Fuego');
+    expect(filteredData).toEqual([]);
+  });
+
+  it('sortData debería ordenar de manera ascendente por pokemonWeight', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'asc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Cubchoo', 'Glaceon', 'Eiscue']);
+  });
+
+  it('sortData debería ordenar de manera descendente por pokemonWeight', () => {
+    const sortedData = sortData(testData, 'pokemonWeight', 'desc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Eiscue', 'Glaceon', 'Cubchoo']);
+  });
+
+  it('computeStats debería calcular estadísticas de peso', () => {
+    const stats = computeStats(testData);
+    expect(stats.totalWeight).toBe('123.40');
+    expect(stats.averageWeight).toBe('41.13');
+    expect(stats.maxWeight).toBe('89.00');
+    expect(stats.minWeight).toBe('8.50');
+  });
+});
+
+
+
+
 
 //sortData(filteredData, arraySort[0], arraySort[1])//(data, sortBy, sortOrder)
