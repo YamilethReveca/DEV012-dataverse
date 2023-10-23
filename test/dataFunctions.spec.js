@@ -540,9 +540,66 @@ describe('Estadistica de pokemon Volador', () => {
 
 
 // filtro pokemones de hilda
+describe('Pruebas para dataFunctions.js - Pokémon Eléctrico', () => {
+  const electricPokemons = [
+    {
+      name: 'Pikachu',
+      facts: { mainField: 'Eléctrico', pokemonWeight: 6.00 },
+    },
+    {
+      name: 'Jolteon',
+      facts: { mainField: 'Eléctrico', pokemonHabilities: 'Absorber voltaje', pokemonWeight: 24.50 },
+    },
+    {
+      name: 'Togedemaru',
+      facts: { mainField: 'Eléctrico', pokemonHabilities: 'Espina trampa', pokemonWeight: 3.30 },
+    },
+  ];
 
-describe('Pruebas para dataFunctions.js', () => {
-  const testData = [
+  it('filterData debería filtrar por mainField', () => {
+    const filteredData = filterData(electricPokemons, 'mainField', 'Eléctrico');
+    expect(filteredData).toEqual([
+      {
+        name: 'Pikachu',
+        facts: { mainField: 'Eléctrico', pokemonWeight: 6.00 },
+      },
+      {
+        name: 'Jolteon',
+        facts: { mainField: 'Eléctrico', pokemonHabilities: 'Absorber voltaje', pokemonWeight: 24.50 },
+      },
+      {
+        name: 'Togedemaru',
+        facts: { mainField: 'Eléctrico', pokemonHabilities: 'Espina trampa', pokemonWeight: 3.30 },
+      },
+    ]);
+  });
+
+  it('filterData debería devolver un arreglo vacío si no se encuentra coincidencia', () => {
+    const filteredData = filterData(electricPokemons, 'mainField', 'Agua');
+    expect(filteredData).toEqual([]);
+  });
+
+  it('sortData debería ordenar de manera ascendente por pokemonWeight', () => {
+    const sortedData = sortData(electricPokemons, 'pokemonWeight', 'asc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Togedemaru', 'Pikachu', 'Jolteon']);
+  });
+
+  it('sortData debería ordenar de manera descendente por pokemonWeight', () => {
+    const sortedData = sortData(electricPokemons, 'pokemonWeight', 'desc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Jolteon', 'Pikachu', 'Togedemaru']);
+  });
+
+  it('computeStats debería calcular estadísticas de peso', () => {
+    const stats = computeStats(electricPokemons);
+    expect(stats.totalWeight).toBe('33.80');
+    expect(stats.averageWeight).toBe('11.27');
+    expect(stats.maxWeight).toBe('24.50');
+    expect(stats.minWeight).toBe('3.30');
+  });
+});
+
+describe('Pruebas para dataFunctions.js - Pokémon de Hielo', () => {
+  const icePokemons = [
     {
       name: 'Cubchoo',
       facts: { mainField: 'Hielo', pokemonWeight: 8.50 },
@@ -558,7 +615,7 @@ describe('Pruebas para dataFunctions.js', () => {
   ];
 
   it('filterData debería filtrar por mainField', () => {
-    const filteredData = filterData(testData, 'mainField', 'Hielo');
+    const filteredData = filterData(icePokemons, 'mainField', 'Hielo');
     expect(filteredData).toEqual([
       {
         name: 'Cubchoo',
@@ -576,22 +633,22 @@ describe('Pruebas para dataFunctions.js', () => {
   });
 
   it('filterData debería devolver un arreglo vacío si no se encuentra coincidencia', () => {
-    const filteredData = filterData(testData, 'mainField', 'Fuego');
+    const filteredData = filterData(icePokemons, 'mainField', 'Fuego');
     expect(filteredData).toEqual([]);
   });
 
   it('sortData debería ordenar de manera ascendente por pokemonWeight', () => {
-    const sortedData = sortData(testData, 'pokemonWeight', 'asc');
+    const sortedData = sortData(icePokemons, 'pokemonWeight', 'asc');
     expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Cubchoo', 'Glaceon', 'Eiscue']);
   });
 
   it('sortData debería ordenar de manera descendente por pokemonWeight', () => {
-    const sortedData = sortData(testData, 'pokemonWeight', 'desc');
+    const sortedData = sortData(icePokemons, 'pokemonWeight', 'desc');
     expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Eiscue', 'Glaceon', 'Cubchoo']);
   });
 
   it('computeStats debería calcular estadísticas de peso', () => {
-    const stats = computeStats(testData);
+    const stats = computeStats(icePokemons);
     expect(stats.totalWeight).toBe('123.40');
     expect(stats.averageWeight).toBe('41.13');
     expect(stats.maxWeight).toBe('89.00');
@@ -599,7 +656,120 @@ describe('Pruebas para dataFunctions.js', () => {
   });
 });
 
+describe('Pruebas para dataFunctions.js - Pokémon Dragón', () => {
+  const dragonPokemons = [
+    {
+      name: 'Altaria',
+      facts: { mainField: 'Dragón', pokemonHabilities: 'Velo sagrado', pokemonWeight: 20.60 },
+    },
+    {
+      name: 'Dratini',
+      facts: { mainField: 'Dragón', pokemonHabilities: 'Cuerpo puro', pokemonWeight: 3.30 },
+    },
+    {
+      name: 'Goodra',
+      facts: { mainField: 'Dragón', pokemonHabilities: 'Hidratación', pokemonWeight: 150.00 },
+    },
+  ];
 
+  it('filterData debería filtrar por mainField', () => {
+    const filteredData = filterData(dragonPokemons, 'mainField', 'Dragón');
+    expect(filteredData).toEqual([
+      {
+        name: 'Altaria',
+        facts: { mainField: 'Dragón', pokemonHabilities: 'Velo sagrado', pokemonWeight: 20.60 },
+      },
+      {
+        name: 'Dratini',
+        facts: { mainField: 'Dragón', pokemonHabilities: 'Cuerpo puro', pokemonWeight: 3.30 },
+      },
+      {
+        name: 'Goodra',
+        facts: { mainField: 'Dragón', pokemonHabilities: 'Hidratación', pokemonWeight: 150.00 },
+      },
+    ]);
+  });
+
+  it('filterData debería devolver un arreglo vacío si no se encuentra coincidencia', () => {
+    const filteredData = filterData(dragonPokemons, 'mainField', 'Fuego');
+    expect(filteredData).toEqual([]);
+  });
+
+  it('sortData debería ordenar de manera ascendente por pokemonWeight', () => {
+    const sortedData = sortData(dragonPokemons, 'pokemonWeight', 'asc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Dratini', 'Altaria', 'Goodra']);
+  });
+
+  it('sortData debería ordenar de manera descendente por pokemonWeight', () => {
+    const sortedData = sortData(dragonPokemons, 'pokemonWeight', 'desc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Goodra', 'Altaria', 'Dratini']);
+  });
+
+  it('computeStats debería calcular estadísticas de peso', () => {
+    const stats = computeStats(dragonPokemons);
+    expect(stats.totalWeight).toBe('173.90'); 
+    expect(stats.averageWeight).toBe('57.97'); 
+    expect(stats.maxWeight).toBe('150.00');
+    expect(stats.minWeight).toBe('3.30');
+  });
+});
+describe('Pruebas para dataFunctions.js - Pokémon de Fantasma', () => {
+  const ghostPokemons = [
+    {
+      name: 'Mimikyu',
+      facts: { mainField: 'Fantasma', pokemonHabilities: 'Disfraz', pokemonWeight: 0.70 },
+    },
+    {
+      name: 'Pumpkaboo',
+      facts: { mainField: 'Fantasma', pokemonHabilities: 'Sombra traviesa', pokemonWeight: 5.00 },
+    },
+    {
+      name: 'Misdreavus',
+      facts: { mainField: 'Fantasma', pokemonHabilities: 'Levitación', pokemonWeight: 1.00 },
+    },
+  ];
+
+  it('filterData debería filtrar por mainField', () => {
+    const filteredData = filterData(ghostPokemons, 'mainField', 'Fantasma');
+    expect(filteredData).toEqual([
+      {
+        name: 'Mimikyu',
+        facts: { mainField: 'Fantasma', pokemonHabilities: 'Disfraz', pokemonWeight: 0.70 },
+      },
+      {
+        name: 'Pumpkaboo',
+        facts: { mainField: 'Fantasma', pokemonHabilities: 'Sombra traviesa', pokemonWeight: 5.00 },
+      },
+      {
+        name: 'Misdreavus',
+        facts: { mainField: 'Fantasma', pokemonHabilities: 'Levitación', pokemonWeight: 1.00 },
+      },
+    ]);
+  });
+
+  it('filterData debería devolver un arreglo vacío si no se encuentra coincidencia', () => {
+    const filteredData = filterData(ghostPokemons, 'mainField', 'Agua');
+    expect(filteredData).toEqual([]);
+  });
+
+  it('sortData debería ordenar de manera ascendente por pokemonWeight', () => {
+    const sortedData = sortData(ghostPokemons, 'pokemonWeight', 'asc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Mimikyu', 'Misdreavus', 'Pumpkaboo']);
+  });
+
+  it('sortData debería ordenar de manera descendente por pokemonWeight', () => {
+    const sortedData = sortData(ghostPokemons, 'pokemonWeight', 'desc');
+    expect(sortedData.map(pokemon => pokemon.name)).toEqual(['Pumpkaboo', 'Misdreavus', 'Mimikyu']);
+  });
+
+  it('computeStats debería calcular estadísticas de peso', () => {
+    const stats = computeStats(ghostPokemons);
+    expect(stats.totalWeight).toBe('6.70'); 
+    expect(stats.averageWeight).toBe('2.23'); 
+    expect(stats.maxWeight).toBe('5.00');
+    expect(stats.minWeight).toBe('0.70');
+  });
+});
 
 
 
