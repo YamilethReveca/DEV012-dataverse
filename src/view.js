@@ -15,7 +15,7 @@ export const renderItems = (data) => {
   
     li.innerHTML= "";  // inicializamos el li vacio.
     let content =`<dl><img class="imgTarjeta" src="${pokemon.imageUrl}" alt="${pokemon.id}">
-<dt><strong>Nombre:</dt><dd itemprop="name">${pokemon.name}</strong></dd>
+<dt><strong>Nombre:</stron></dt><dd itemprop="name"><stron>${pokemon.name}</strong></dd>
 <dt><strong>Corta descripción:</strong></dt><dd itemprop="shortDescription">${pokemon.shortDescription}</dd>
 <dt><strong>Descripción:</strong></dt><dd class="estilo" itemprop="description">${pokemon.description}</dd>`;
 

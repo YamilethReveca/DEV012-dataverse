@@ -54,9 +54,11 @@ section label, section select, section button {
 }
 
 .filter-sort-button-container {
-  display: inline-block;
+  display: block;
   text-align: center;
   flex-wrap: wrap; /* Permite que los elementos se ajusten al ancho de la pantalla */
+  width: 30%;
+  margin:0 auto;
 }
 
 .filter-sort-button-container label {

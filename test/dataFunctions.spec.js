@@ -156,7 +156,7 @@ const TEXT_POKEMON_VOLADOR=[{
   }
 }];
 // pruebas de filtrado 
-describe(' Prueba de filtro de Pokemon tipo', () => {
+describe(' Prueba de filtro de Pokemon por tipo', () => {
   
   it('Filtrar pokémon por tipo Fuego', () => {
     const filterFuego = filterData(data, "mainField" , "Fuego" );
@@ -770,7 +770,3 @@ describe('Pruebas para dataFunctions.js - Pokémon de Fantasma', () => {
     expect(stats.minWeight).toBe('0.70');
   });
 });
-
-
-
-//sortData(filteredData, arraySort[0], arraySort[1])//(data, sortBy, sortOrder)
