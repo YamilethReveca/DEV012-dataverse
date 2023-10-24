@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />    
+  </head>
+  <body>
+    <header>
+      <h1></h1>  
+      <img id="logo" src="imageUrl/imageLogo.png"><br>
+      <img id="subtitulo" src="imageUrl/bienvenido.png">
+    </header>
+    <main>     
+      <section id="filtro-orden-button">
+        <div class="filter-sort-button-container">
+          <label for="filtrar">Filtrar por tipo</label>
+          <select id="filtrar" data-testid="select-filter" name="type">
+            <option value="">Elegir tipo</option>
+            <option value="Agua">Agua</option>
+            <option value="Dragón">Dragón</option>      
+            <option value="Fantasma">Fantasma</option>
+            <option value="Fuego">Fuego</option>
+            <option value="Hielo">Hielo</option>
+            <option value="Tierra">Tierra</option>
+            <option value="Eléctrico">Eléctrico</option>
+            <option value="Volador">Volador</option>
+          </select>
+        </div>
+        <div class="filter-sort-button-container">
+          <label for="ordenar">Ordenar por nombre ascendente-descendente</label>
+          <select id="ordenar" data-testid="select-sort" name="name">
+            <option value="">Ordenar por</option>
+            
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>           
+          </select>
+        </div>
+        
+        <div class="filter-sort-button-container">
+          <button data-testid="button-clear">Limpiar</button>
+        </div>
+      </section>
+      <h2>Estadistica Pokémon</h2>
+      <section id="mostarEstadistica">         
+      </section>
+      <section id="root">      
+      </section> 
+    </main>     
+    <footer>
+      <p><strong>Autor: Hilda García - Yamileth Caldera</strong></p>
+    </footer>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
