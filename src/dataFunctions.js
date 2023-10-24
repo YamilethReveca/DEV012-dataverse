@@ -25,24 +25,7 @@ export const sortData = (data, sortBy, sortOrder) => {
         return b.name.localeCompare(a.name);
       }
     });
-    break;
-  case "pokemonHabilities":
-    sortedData.sort((a, b) => {
-      if (sortOrder === "asc") {
-        return a.facts.pokemonHabilities.localeCompare(b.facts.pokemonHabilities);
-      } else if (sortOrder === "desc") {
-        return b.facts.pokemonHabilities.localeCompare(a.facts.pokemonHabilities);
-      }
-    });
-    break;
-  case "pokemonWeight":
-    sortedData.sort((a, b) => {
-      if (sortOrder === "asc") {
-        return (a.facts.pokemonWeight) - (b.facts.pokemonWeight);
-      } else if (sortOrder === "desc") {
-        return (b.facts.pokemonWeight) - (a.facts.pokemonWeight);
-      }
-    });
+     
     break;
   default:
     // Si no se proporciona un campo válido, devuelve los datos sin cambios

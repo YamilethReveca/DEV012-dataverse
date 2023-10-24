@@ -29,22 +29,15 @@
           </select>
         </div>
         <div class="filter-sort-button-container">
-          <label for="ordenar">Ordenar</label>
+          <label for="ordenar">Ordenar por nombre ascendente-descendente</label>
           <select id="ordenar" data-testid="select-sort" name="name">
             <option value="">Ordenar por</option>
-            <option value="name">Nombre</option>
-            <option value="pokemonHabilities">Habilidad</option>
-            <option value="pokemonWeight">Peso</option>           
+            
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>           
           </select>
         </div>
-        <div class="filter-sort-button-container">
-          <label for="asc-desc">Ordenar Ascendente/Descendente</label>
-          <select id="asc-desc" name="sort-order">
-            <option value="">Ordenar Asc-Desc</option>
-            <option value="asc">A-Z</option>
-            <option value="desc">Z-A</option>
-          </select>
-        </div>
+        
         <div class="filter-sort-button-container">
           <button data-testid="button-clear">Limpiar</button>
         </div>

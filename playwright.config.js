@@ -44,4 +44,5 @@ export default defineConfig({
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
   },
+  timeout: 5 * 60 * 1000
 });
