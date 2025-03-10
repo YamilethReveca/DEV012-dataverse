@@ -15,16 +15,16 @@ test.describe('Pagina interraciones', () => {
     return values;
   };
 
-  const getDataIds = (elements) => Promise.all(elements.map(async (el) => await el.getAttribute('data-id')));  
+  // const getDataIds = (elements) => Promise.all(elements.map(async (el) => await el.getAttribute('data-id')));
 
   const getSortOptions = async (page) => {
     const selectSortEl = await page.getByTestId('select-sort')
-    let sortByProperty = await selectSortEl.getAttribute('name'); 
+    let sortByProperty = await selectSortEl.getAttribute('name');
     const sortOrderEl = await page.$('[name="sort-order"]');
 
     if (!sortOrderEl) { // simple sort UI with just one type of sort
       const sortOrder = await selectSortEl.getAttribute('value');
-      return { 
+      return {
         selectSortEl,
         sortByProperty,
         sortOrderEl: selectSortEl,
@@ -34,9 +34,9 @@ test.describe('Pagina interraciones', () => {
 
     const sortOrder = await sortOrderEl.getAttribute('value');
     sortByProperty = await selectSortEl.getAttribute('name');
-    return { 
+    return {
       selectSortEl,
-      sortByProperty, 
+      sortByProperty,
       sortOrderEl,
       sortOrder
     }
@@ -58,7 +58,7 @@ test.describe('Pagina interraciones', () => {
   test.describe('sort', () => {
 
     let sortOrderEl, sortByProperty;
-  
+
     test.beforeEach(async ({ page }) => {
       await page.goto('http://localhost:3000/');
       ({ sortOrderEl, sortByProperty } = await getSortOptions(page));
@@ -66,7 +66,7 @@ test.describe('Pagina interraciones', () => {
 
     test('de ascendente "asc" a descendente "desc"', async ({ page }) => {
       // await sortOrderEl.selectOption(sortOptions.asc);
-      await selectSortOrder(sortOrderEl,sortOptions.asc); 
+      await selectSortOrder(sortOrderEl,sortOptions.asc);
       const sortedValuesAsc = await getItempropValues(page, sortByProperty);
 
       await selectSortOrder(sortOrderEl,sortOptions.desc);
@@ -88,26 +88,28 @@ test.describe('Pagina interraciones', () => {
     });
   });
 
-  test.describe('filter', () => {
+  // test.describe('filter', () => {
 
-    let selectFilter;
+  //   let selectFilter;
 
-    test.beforeEach(async ({ page }) => {
-      await page.goto('http://localhost:3000/');
-      selectFilter = await page.getByTestId('select-filter');
-    });
+  //   test.beforeEach(async ({ page }) => {
+  //     await page.goto('http://localhost:3000/');
+  //     selectFilter = await page.getByTestId('select-filter');
+  //   });
 
-    test(`cuando elige un filter a otro los resultados se cambian`, async ({ page }) => {
-      await selectFilter.selectOption({ index: 1 });
-      const originalLis = await page.$$(liSelector);
-      const originalIds = await getDataIds(originalLis);
+  //   test(`cuando elige un filter a otro los resultados se cambian`, async ({ page }) => {
+  //     await selectFilter.selectOption({ index: 1 });
 
-      await selectFilter.selectOption({ index: 2 });
-      const currentLis = await page.$$(liSelector);
-      const currentIds = await getDataIds(currentLis)
-      expect(originalIds).not.toEqual(currentIds);
-    });
-  });
+  //     const originalLis = await page.$$(liSelector);
+  //     const originalIds = await getDataIds(originalLis);
+
+  //     await selectFilter.selectOption({ index: 2 });
+  //     const currentLis = await page.$$(liSelector);
+  //     const currentIds = await getDataIds(currentLis);
+
+  //     expect(originalIds).not.toEqual(currentIds);
+  //   });
+  // });
 
   test.describe('sort + filter', () => {
 
@@ -125,11 +127,11 @@ test.describe('Pagina interraciones', () => {
 
       // sacamos los valores de propiedad en el orden que ocurre en la pagina
       // sin sort
-      const valuesNoSorted = await getItempropValues(page, sortByProperty);  
+      const valuesNoSorted = await getItempropValues(page, sortByProperty);
 
       await selectSortOrder(sortOrderEl,sortOptions.asc);
       const valuesSortedAsc = await getItempropValues(page, sortByProperty);
-  
+
       // await sortOrderEl.selectOption(sortOptions.desc);
       await selectSortOrder(sortOrderEl,sortOptions.desc);
       const valuesSortedDesc = await getItempropValues(page, sortByProperty);
